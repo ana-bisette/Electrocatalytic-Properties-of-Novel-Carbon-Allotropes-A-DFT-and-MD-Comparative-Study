@@ -1,0 +1,59 @@
+#!/bin/bash
+
+estrutura="0.307-45"
+base="/home/ana.bisette/MD/oldReaxFF_adsorption/$estrutura"
+cd $base
+
+#H_species
+for i in {1..5}; do
+    pasta="$base/H_specie/H_$i"
+    input="/home/ana.bisette/MD/newReaxFF_adsorption/0.307-45/H_specie/H_$i/H_$i.lmp"
+    mkdir $pasta    
+    cp -r  /home/ana.bisette/MD/oldReaxFF_adsorption/H_template/. $pasta/
+    cp $input $pasta/
+    sed -i "s/^read_data.*/read_data       H_$i.lmp/" "$pasta/input"
+    cd $pasta
+    sbatch job
+done
+
+cd $base
+
+#OH_specie
+for i in {1..5}; do
+    pasta="$base/OH_specie/OH_$i"
+    input="/home/ana.bisette/MD/newReaxFF_adsorption/0.307-45/OH_specie/OH_$i/OH_$i.lmp"
+    mkdir $pasta
+    cp -r /home/ana.bisette/MD/oldReaxFF_adsorption/OH_template/. $pasta/
+    cp $input $pasta/
+    sed -i "s/^read_data.*/read_data       OH_$i.lmp/" "$pasta/input"
+    cd $pasta
+    sbatch job
+done
+
+cd $base
+
+#O_specie
+for i in {1..5}; do
+    pasta="$base/O_specie/O_$i"
+    input="/home/ana.bisette/MD/newReaxFF_adsorption/0.307-45/O_specie/O_$i/O_$i.lmp"
+    mkdir $pasta
+    cp -r /home/ana.bisette/MD/oldReaxFF_adsorption/O_template/. $pasta/
+    cp $input $pasta/
+    sed -i "s/^read_data.*/read_data       O_$i.lmp/" "$pasta/input"
+    cd $pasta
+    sbatch job
+done
+
+cd $base
+
+#OOH_specie
+for i in {1..5}; do
+    pasta="$base/OOH_specie/OOH_$i"
+    input="/home/ana.bisette/MD/newReaxFF_adsorption/0.307-45/OOH_specie/OOH_$i/OOH_$i.lmp"
+    mkdir $pasta
+    cp -r /home/ana.bisette/MD/oldReaxFF_adsorption/OOH_template/. $pasta/
+    cp $input $pasta/
+    sed -i "s/^read_data.*/read_data       OOH_$i.lmp/" "$pasta/input"
+    cd $pasta
+    sbatch job
+done

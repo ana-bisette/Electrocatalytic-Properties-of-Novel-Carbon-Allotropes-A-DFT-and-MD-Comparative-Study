@@ -1,0 +1,255 @@
+
+     Program PWSCF v.7.1 starts on  8Aug2025 at 16:10:10 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    16 processors
+
+     MPI processes distributed on     1 nodes
+     237156 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from input.pwi
+Warning: card &CELL ignored
+Warning: card / ignored
+Warning: card &FCP ignored
+Warning: card / ignored
+Warning: card &RISM ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     gamma-point specific algorithms are used
+     Found identity + (  0.5000  0.5000  0.0000) symmetry
+     This is a supercell, fractional translations are disabled
+
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     custom distributed-memory algorithm (size of sub-group:  3*  3 procs)
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        4142    2070    516               164365    58108    7272
+     Max        4146    2074    520               164368    58110    7274
+     Sum       66295   33157   8285              2629865   929751  116373
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      61.9987  a.u.
+     unit-cell volume          =   19468.4774 (a.u.)^3
+     number of atoms/cell      =          112
+     number of atomic types    =            1
+     number of electrons       =       448.00 (up: 224.00, down: 224.00)
+     number of Kohn-Sham states=          269
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     400.0000  Ry
+     scf convergence threshold =      1.0E-06
+     mixing beta               =       0.3000
+     number of iterations used =            8  plain     mixing
+     energy convergence thresh.=      1.0E-04
+     force convergence thresh. =      1.0E-03
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     nstep                     =         1000
+
+
+     celldm(1)=  61.998709  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   0.541926   0.000000 )  
+               a(3) = (   0.000000   0.000000   0.150745 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.845271  0.000000 )  
+               b(3) = (  0.000000  0.000000  6.633699 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     /home/ana.bisette/espresso/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 5d2aebdfa2cae82b50a7e79e9516da0f
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  v.5.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01100     C ( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        C            0.000
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.1881524  -0.0116351   0.0751081  )
+         2           C   tau(   2) = (   0.8343193  -0.0116351   0.0751081  )
+         3           C   tau(   3) = (   0.6881520   0.2593276   0.0751081  )
+         4           C   tau(   4) = (   0.3343208   0.2593276   0.0751081  )
+         5           C   tau(   5) = (   0.1637012  -0.0116351   0.0374219  )
+         6           C   tau(   6) = (   0.8587704  -0.0116351   0.0374219  )
+         7           C   tau(   7) = (   0.6637009   0.2593276   0.0374219  )
+         8           C   tau(   8) = (   0.3587720   0.2593276   0.0374219  )
+         9           C   tau(   9) = (   0.1211090   0.5302895   0.0374219  )
+        10           C   tau(  10) = (   0.9013633  -0.0116351   0.0374219  )
+        11           C   tau(  11) = (   0.6211080   0.2593276   0.0374219  )
+        12           C   tau(  12) = (   0.4013618   0.2593276   0.0374219  )
+        13           C   tau(  13) = (   0.2146780   0.0258871   0.0751081  )
+        14           C   tau(  14) = (   0.8077955   0.4927686   0.0751081  )
+        15           C   tau(  15) = (   0.8077955   0.0258872   0.0751081  )
+        16           C   tau(  16) = (   0.2146780   0.4927686   0.0751081  )
+        17           C   tau(  17) = (   0.7146788   0.2968502   0.0751081  )
+        18           C   tau(  18) = (   0.3077940   0.2218054   0.0751081  )
+        19           C   tau(  19) = (   0.3077940   0.2968498   0.0751081  )
+        20           C   tau(  20) = (   0.7146788   0.2218054   0.0751081  )
+        21           C   tau(  21) = (   0.2532334   0.1034028   0.0751081  )
+        22           C   tau(  22) = (   0.7692382   0.4152516   0.0751081  )
+        23           C   tau(  23) = (   0.7692382   0.1034028   0.0751081  )
+        24           C   tau(  24) = (   0.2532334   0.4152516   0.0751081  )
+        25           C   tau(  25) = (   0.7532331   0.3743656   0.0751081  )
+        26           C   tau(  26) = (   0.2692389   0.1442900   0.0751081  )
+        27           C   tau(  27) = (   0.2692389   0.3743656   0.0751081  )
+        28           C   tau(  28) = (   0.7532331   0.1442900   0.0751081  )
+        29           C   tau(  29) = (   0.2254588   0.0436585   0.0374219  )
+        30           C   tau(  30) = (   0.7970147   0.4749956   0.0374219  )
+        31           C   tau(  31) = (   0.7970147   0.0436585   0.0374219  )
+        32           C   tau(  32) = (   0.2254588   0.4749956   0.0374219  )
+        33           C   tau(  33) = (   0.7254596   0.3146216   0.0374219  )
+        34           C   tau(  34) = (   0.2970132   0.2040340   0.0374219  )
+        35           C   tau(  35) = (   0.2970132   0.3146216   0.0374219  )
+        36           C   tau(  36) = (   0.7254596   0.2040340   0.0374219  )
+        37           C   tau(  37) = (   0.2449090   0.0833115   0.0374219  )
+        38           C   tau(  38) = (   0.7775623   0.4353441   0.0374219  )
+        39           C   tau(  39) = (   0.7775623   0.0833115   0.0374219  )
+        40           C   tau(  40) = (   0.2449090   0.4353441   0.0374219  )
+        41           C   tau(  41) = (   0.7449090   0.3542731   0.0374219  )
+        42           C   tau(  42) = (   0.2775633   0.1643813   0.0374219  )
+        43           C   tau(  43) = (   0.2775633   0.3542731   0.0374219  )
+        44           C   tau(  44) = (   0.7449090   0.1643813   0.0374219  )
+        45           C   tau(  45) = (   0.0986308   0.5302895   0.0751081  )
+        46           C   tau(  46) = (   0.9238423   0.5302895   0.0751081  )
+        47           C   tau(  47) = (   0.5986320   0.2593276   0.0751081  )
+        48           C   tau(  48) = (   0.4238409   0.2593276   0.0751081  )
+        49           C   tau(  49) = (   0.0551772   0.5302895   0.0751081  )
+        50           C   tau(  50) = (   0.9672948   0.5302895   0.0751081  )
+        51           C   tau(  51) = (   0.5551765   0.2593276   0.0751081  )
+        52           C   tau(  52) = (   0.4672963   0.2593276   0.0751081  )
+        53           C   tau(  53) = (   0.0330188   0.5302895   0.0374219  )
+        54           C   tau(  54) = (   0.9894537   0.5302895   0.0374219  )
+        55           C   tau(  55) = (   0.5330175   0.2593276   0.0374219  )
+        56           C   tau(  56) = (   0.4894523   0.2593276   0.0374219  )
+        57           C   tau(  57) = (   0.1881524  -0.0116351   0.1504809  )
+        58           C   tau(  58) = (   0.8343193  -0.0116351   0.1504809  )
+        59           C   tau(  59) = (   0.6881520   0.2593276   0.1504809  )
+        60           C   tau(  60) = (   0.3343208   0.2593276   0.1504809  )
+        61           C   tau(  61) = (   0.1637012  -0.0116351   0.1127947  )
+        62           C   tau(  62) = (   0.8587704  -0.0116351   0.1127947  )
+        63           C   tau(  63) = (   0.6637009   0.2593276   0.1127947  )
+        64           C   tau(  64) = (   0.3587720   0.2593276   0.1127947  )
+        65           C   tau(  65) = (   0.1211090   0.5302895   0.1127947  )
+        66           C   tau(  66) = (   0.9013633  -0.0116351   0.1127947  )
+        67           C   tau(  67) = (   0.6211080   0.2593276   0.1127947  )
+        68           C   tau(  68) = (   0.4013618   0.2593276   0.1127947  )
+        69           C   tau(  69) = (   0.2146780   0.0258871   0.1504809  )
+        70           C   tau(  70) = (   0.8077955   0.4927686   0.1504809  )
+        71           C   tau(  71) = (   0.8077955   0.0258872   0.1504809  )
+        72           C   tau(  72) = (   0.2146780   0.4927686   0.1504809  )
+        73           C   tau(  73) = (   0.7146788   0.2968502   0.1504809  )
+        74           C   tau(  74) = (   0.3077940   0.2218054   0.1504809  )
+        75           C   tau(  75) = (   0.3077940   0.2968498   0.1504809  )
+        76           C   tau(  76) = (   0.7146788   0.2218054   0.1504809  )
+        77           C   tau(  77) = (   0.2532334   0.1034028   0.1504809  )
+        78           C   tau(  78) = (   0.7692382   0.4152516   0.1504809  )
+        79           C   tau(  79) = (   0.7692382   0.1034028   0.1504809  )
+        80           C   tau(  80) = (   0.2532334   0.4152516   0.1504809  )
+        81           C   tau(  81) = (   0.7532331   0.3743656   0.1504809  )
+        82           C   tau(  82) = (   0.2692389   0.1442900   0.1504809  )
+        83           C   tau(  83) = (   0.2692389   0.3743656   0.1504809  )
+        84           C   tau(  84) = (   0.7532331   0.1442900   0.1504809  )
+        85           C   tau(  85) = (   0.2254588   0.0436585   0.1127947  )
+        86           C   tau(  86) = (   0.7970147   0.4749956   0.1127947  )
+        87           C   tau(  87) = (   0.7970147   0.0436585   0.1127947  )
+        88           C   tau(  88) = (   0.2254588   0.4749956   0.1127947  )
+        89           C   tau(  89) = (   0.7254596   0.3146216   0.1127947  )
+        90           C   tau(  90) = (   0.2970132   0.2040340   0.1127947  )
+        91           C   tau(  91) = (   0.2970132   0.3146216   0.1127947  )
+        92           C   tau(  92) = (   0.7254596   0.2040340   0.1127947  )
+        93           C   tau(  93) = (   0.2449090   0.0833115   0.1127947  )
+        94           C   tau(  94) = (   0.7775623   0.4353441   0.1127947  )
+        95           C   tau(  95) = (   0.7775623   0.0833115   0.1127947  )
+        96           C   tau(  96) = (   0.2449090   0.4353441   0.1127947  )
+        97           C   tau(  97) = (   0.7449090   0.3542731   0.1127947  )
+        98           C   tau(  98) = (   0.2775633   0.1643813   0.1127947  )
+        99           C   tau(  99) = (   0.2775633   0.3542731   0.1127947  )
+       100           C   tau( 100) = (   0.7449090   0.1643813   0.1127947  )
+       101           C   tau( 101) = (   0.0986308   0.5302895   0.1504809  )
+       102           C   tau( 102) = (   0.9238423   0.5302895   0.1504809  )
+       103           C   tau( 103) = (   0.5986320   0.2593276   0.1504809  )
+       104           C   tau( 104) = (   0.4238409   0.2593276   0.1504809  )
+       105           C   tau( 105) = (   0.0551772   0.5302895   0.1504809  )
+       106           C   tau( 106) = (   0.9672948   0.5302895   0.1504809  )
+       107           C   tau( 107) = (   0.5551765   0.2593276   0.1504809  )
+       108           C   tau( 108) = (   0.4672963   0.2593276   0.1504809  )
+       109           C   tau( 109) = (   0.0330188   0.5302895   0.1127947  )
+       110           C   tau( 110) = (   0.9894537   0.5302895   0.1127947  )
+       111           C   tau( 111) = (   0.5330175   0.2593276   0.1127947  )
+       112           C   tau( 112) = (   0.4894523   0.2593276   0.1127947  )
+
+     number of k points=     1  Gaussian smearing, width (Ry)=  0.0001
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
+
+     Dense  grid:  1314933 G-vectors     FFT dimensions: ( 400, 216,  60)
+
+     Smooth grid:   464876 G-vectors     FFT dimensions: ( 288, 160,  45)
+
+     Estimated max dynamical RAM per process >     664.81 MB
+
+     Estimated total dynamical RAM >      10.39 GB
+
+     Check: negative core charge=   -0.000003
+     Generating pointlists ...
+     new r_m :   0.0176 (alat units)  1.0892 (a.u.) for type    1
+
+     Initial potential from superposition of free atoms
+
+     starting charge     447.9953, renormalised to     448.0000
+
+     negative rho (up, down):  9.216E-04 9.216E-04
+     Starting wfcs are  448 randomized atomic wfcs

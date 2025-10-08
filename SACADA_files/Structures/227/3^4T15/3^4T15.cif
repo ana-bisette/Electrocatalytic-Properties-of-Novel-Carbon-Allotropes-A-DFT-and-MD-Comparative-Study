@@ -1,0 +1,111 @@
+data_911221384-TOPOS_3^4T15
+_audit_creation_date                2015-11-18
+_audit_creation_method              ToposPro
+_chemical_formula_structural        3^4T15
+_chemical_name_systematic
+;
+3^4T15
+;
+_chemical_formula_sum               C1
+_citation_special_details
+;
+Wavelength = 0.71073.; Estimated standard deviations in the unit-cell
+ dimensions: esd(a)=0.0000 esd(b)=0.0000 esd(c)=0.0000 esd(alfa)=0.00
+0 esd(beta)=0.000 esd(gamma)=0.000.; TRMX 1.000 0.000 0.000 0.000 -1.
+000 0.000 0.000 0.000 -1.000 cP 12; SPGR Pm-3m
+;
+_cell_length_a                      14.408
+_cell_length_b                      14.408
+_cell_length_c                      14.408
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   90
+_cell_volume                        2990.963
+_cell_formula_units_Z               168
+_symmetry_space_group_name_H-M      'P m 3 m'
+_symmetry_Int_Tables_number         221
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+3 x,-y,-z
+4 -x,y,-z
+5 z,x,y
+6 y,z,x
+7 -z,-x,y
+8 -y,z,-x
+9 z,-x,-y
+10 -y,-z,x
+11 -z,x,-y
+12 y,-z,-x
+13 -y,-x,-z
+14 y,x,-z
+15 y,-x,z
+16 -y,x,z
+17 -x,-z,-y
+18 -z,-y,-x
+19 x,z,-y
+20 -z,y,x
+21 x,-z,y
+22 z,y,-x
+23 -x,z,y
+24 z,-y,x
+25 -x,-y,-z
+26 x,y,-z
+27 -x,y,z
+28 x,-y,z
+29 -z,-x,-y
+30 -y,-z,-x
+31 z,x,-y
+32 y,-z,x
+33 -z,x,y
+34 y,z,-x
+35 z,-x,y
+36 -y,z,x
+37 y,x,z
+38 -y,-x,z
+39 -y,x,-z
+40 y,-x,-z
+41 x,z,y
+42 z,y,x
+43 -x,-z,y
+44 z,-y,-x
+45 -x,z,-y
+46 -z,-y,x
+47 x,-z,-y
+48 -z,y,-x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 48 0.16445 0.90512 0.58499 1.0000
+C2 C 48 0.18222 0.95217 0.67196 1.0000
+C3 C 48 0.17701 0.89249 0.75438 1.0000
+C4 C 24 0.18549 0.95019 0.50000 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_voronoi_solidangle
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C1 1_0_0_0 38_1_1_0 1.4176 30.78 V 24
+C1 C4 1_0_0_0 1_0_0_0 1.4188 30.10 V 48
+C1 C2 1_0_0_0 1_0_0_0 1.4475 28.47 V 48
+C1 C1 1_0_0_0 28_0_2_0 2.7341 2.90 W 24
+C2 C2 1_0_0_0 28_0_2_0 1.3783 31.18 V 24
+C2 C3 1_0_0_0 1_0_0_0 1.4681 27.89 V 48
+C2 C2 1_0_0_0 38_1_1_0 2.7383 4.11 W 24
+C3 C3 1_0_0_0 48_1_0_1 1.3980 31.82 V 24
+C3 C3 1_0_0_0 38_1_1_0 1.4161 31.23 V 24
+C4 C4 1_0_0_0 3_0_2_1 1.4353 30.57 V 12
+C4 C4 1_0_0_0 13_1_1_1 2.7646 2.26 W 12
+#End of data_911221384-TOPOS_3^4T15

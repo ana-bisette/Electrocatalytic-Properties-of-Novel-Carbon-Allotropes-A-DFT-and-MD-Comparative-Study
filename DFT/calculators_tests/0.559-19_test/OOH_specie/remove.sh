@@ -1,0 +1,7 @@
+#!/bin/bash
+
+current="/home/madmaxiiemus/H"
+
+for i in {1..8} ; do
+	rm -r /home/ana.bisette/espresso/teste_calculators/0.559-19/OOH_specie/OOH_$i
+done

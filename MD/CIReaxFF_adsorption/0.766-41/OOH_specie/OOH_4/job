@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH -n 8
+#SBATCH --ntasks-per-node=8
+#SBATCH -p fast
+#SBATCH --job-name=job
+
+module purge
+
+module load autotools
+module load prun/2.2
+module load gnu9/9.4.0
+module load openmpi4/4.1.1
+module load ohpc
+module load fftw/3.3.8
+
+mpirun -np 8 /home/matheus.medina/lammps-3Mar20/src/lmp_g++_openmpi_link -in input
+#export PATH=$PATH:/home/matheus.medina/lammps-3Mar20/src/lmp_g++_openmpi_link
+#export OMP_MUM_THREADS=1
+
+#mpirun -np 8 lmp_g++_openmpi_link -in input 
+

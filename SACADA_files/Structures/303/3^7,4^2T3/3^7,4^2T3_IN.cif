@@ -1,0 +1,88 @@
+data_338-TOPOS_3^7,4^2T3
+_audit_creation_date                2016-10-06
+_audit_creation_method              ToposPro
+_chemical_formula_structural        3^7,4^2T3
+_chemical_formula_sum               C1
+_citation_special_details
+;
+File: SysAl.out.cgd. 
+;
+_cell_length_a                      17.20139
+_cell_length_b                      17.20139
+_cell_length_c                      28.09038
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   120
+_cell_volume                        7198.057
+_cell_formula_units_Z               216
+_symmetry_space_group_name_H-M      'P 63/m m c'
+_symmetry_Int_Tables_number         194
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,1/2+z
+3 -y,x-y,z
+4 -x+y,-x,z
+5 x-y,x,1/2+z
+6 y,-x+y,1/2+z
+7 x-y,-y,-z
+8 -x,-x+y,-z
+9 y,x,-z
+10 -y,-x,1/2-z
+11 x,x-y,1/2-z
+12 -x+y,y,1/2-z
+13 -x,-y,-z
+14 x,y,1/2-z
+15 y,-x+y,-z
+16 x-y,x,-z
+17 -x+y,-x,1/2-z
+18 -y,x-y,1/2-z
+19 -x+y,y,z
+20 x,x-y,z
+21 -y,-x,z
+22 y,x,1/2+z
+23 -x,-x+y,1/2+z
+24 x-y,-y,1/2+z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 24 0.23684 0.60526 0.03947 1.0000
+C2 C 12 0.14035 0.57017 0.02632 1.0000
+C3 C 12 0.22807 0.61404 0.05263 1.0000
+C4 C 24 0.27193 0.62281 0.06579 1.0000
+C5 C 4 0.33333 0.66667 0.17105 1.0000
+C6 C 12 0.31579 0.65789 0.11842 1.0000
+C7 C 24 0.28947 0.63158 0.03947 1.0000
+C8 C 24 0.28070 0.61404 0.05263 1.0000
+C9 C 24 0.30702 0.64035 0.09211 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C8 1_0_0_0 1_0_0_0 0.7841 V 24
+C1 C7 1_0_0_0 1_0_0_0 0.7840 V 24
+C1 C2 1_0_0_0 1_0_0_0 1.5013 V 24
+C2 C3 1_0_0_0 1_0_0_0 1.5013 V 12
+C2 C2 1_0_0_0 8_0_0_0 4.4353 V 6
+C3 C4 1_0_0_0 20_0_1_0 0.7840 V 24
+C4 C9 1_0_0_0 1_0_0_0 0.9055 V 24
+C4 C8 1_0_0_0 1_0_0_0 0.4527 V 24
+C5 C6 1_0_0_0 4_0_1_0 1.5013 V 12
+C5 C5 1_0_0_0 10_1_1_0 4.4355 V 2
+C6 C9 1_0_0_0 20_0_1_0 0.7839 V 24
+C7 C7 1_0_0_0 20_0_1_0 0.4526 V 12
+C7 C7 1_0_0_0 19_0_0_0 0.9055 V 12
+C8 C8 1_0_0_0 19_0_0_0 0.9054 V 12
+C9 C9 1_0_0_0 19_0_0_0 0.4526 V 12
+#End of data_338-TOPOS_3^7,4^2T3

@@ -1,0 +1,8 @@
+Organização:
+
+1. Apagar as pastas old_reaxff para cada espécie de cada estrutura;
+
+2. Converter cada estrutura para .lmp;
+
+3. Criar um script para cada estrutura considerando os sítios equivalentes separadamente;
+

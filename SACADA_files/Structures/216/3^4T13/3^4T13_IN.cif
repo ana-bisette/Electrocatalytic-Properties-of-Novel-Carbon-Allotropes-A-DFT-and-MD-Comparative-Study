@@ -1,0 +1,146 @@
+data_192-TOPOS_G8bal/Systre
+_audit_creation_date                2015-01-13
+_audit_creation_method              ToposPro
+_chemical_formula_structural        3^4T13
+_chemical_formula_sum               C1
+_citation_special_details
+;
+File: 3D C.out.cgd. 
+;
+_cell_length_a                      12.91402
+_cell_length_b                      12.91402
+_cell_length_c                      12.91402
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   90
+_cell_volume                        2153.696
+_symmetry_space_group_name_H-M      'I a -3 d'
+_symmetry_Int_Tables_number         230
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,1/2-y,z
+3 x,-y,1/2-z
+4 1/2-x,y,-z
+5 z,x,y
+6 y,z,x
+7 -z,1/2-x,y
+8 1/2-y,z,-x
+9 z,-x,1/2-y
+10 -y,1/2-z,x
+11 1/2-z,x,-y
+12 y,-z,1/2-x
+13 1/4-y,1/4-x,1/4-z
+14 3/4+y,1/4+x,1/4-z
+15 1/4+y,1/4-x,3/4+z
+16 1/4-y,3/4+x,1/4+z
+17 1/4-x,1/4-z,1/4-y
+18 1/4-z,1/4-y,1/4-x
+19 3/4+x,1/4+z,1/4-y
+20 1/4-z,3/4+y,1/4+x
+21 1/4+x,1/4-z,3/4+y
+22 3/4+z,1/4+y,1/4-x
+23 1/4-x,3/4+z,1/4+y
+24 1/4+z,1/4-y,3/4+x
+25 -x,-y,-z
+26 x,1/2+y,-z
+27 -x,y,1/2+z
+28 1/2+x,-y,z
+29 -z,-x,-y
+30 -y,-z,-x
+31 z,1/2+x,-y
+32 1/2+y,-z,x
+33 -z,x,1/2+y
+34 y,1/2+z,-x
+35 1/2+z,-x,y
+36 -y,z,1/2+x
+37 1/4+y,1/4+x,1/4+z
+38 3/4-y,1/4-x,1/4+z
+39 1/4-y,1/4+x,3/4-z
+40 1/4+y,3/4-x,1/4-z
+41 1/4+x,1/4+z,1/4+y
+42 1/4+z,1/4+y,1/4+x
+43 3/4-x,1/4-z,1/4+y
+44 1/4+z,3/4-y,1/4-x
+45 1/4-x,1/4+z,3/4-y
+46 3/4-z,1/4-y,1/4+x
+47 1/4+x,3/4-z,1/4-y
+48 1/4-z,1/4+y,3/4-x
+49 1/2+x,1/2+y,1/2+z
+50 1/2-x,-y,1/2+z
+51 1/2+x,1/2-y,-z
+52 -x,1/2+y,1/2-z
+53 1/2+z,1/2+x,1/2+y
+54 1/2+y,1/2+z,1/2+x
+55 1/2-z,-x,1/2+y
+56 -y,1/2+z,1/2-x
+57 1/2+z,1/2-x,-y
+58 1/2-y,-z,1/2+x
+59 -z,1/2+x,1/2-y
+60 1/2+y,1/2-z,-x
+61 3/4-y,3/4-x,3/4-z
+62 1/4+y,3/4+x,3/4-z
+63 3/4+y,3/4-x,1/4+z
+64 3/4-y,1/4+x,3/4+z
+65 3/4-x,3/4-z,3/4-y
+66 3/4-z,3/4-y,3/4-x
+67 1/4+x,3/4+z,3/4-y
+68 3/4-z,1/4+y,3/4+x
+69 3/4+x,3/4-z,1/4+y
+70 1/4+z,3/4+y,3/4-x
+71 3/4-x,1/4+z,3/4+y
+72 3/4+z,3/4-y,1/4+x
+73 1/2-x,1/2-y,1/2-z
+74 1/2+x,y,1/2-z
+75 1/2-x,1/2+y,z
+76 x,1/2-y,1/2+z
+77 1/2-z,1/2-x,1/2-y
+78 1/2-y,1/2-z,1/2-x
+79 1/2+z,x,1/2-y
+80 y,1/2-z,1/2+x
+81 1/2-z,1/2+x,y
+82 1/2+y,z,1/2-x
+83 z,1/2-x,1/2+y
+84 1/2-y,1/2+z,x
+85 3/4+y,3/4+x,3/4+z
+86 1/4-y,3/4-x,3/4+z
+87 3/4-y,3/4+x,1/4-z
+88 3/4+y,1/4-x,3/4-z
+89 3/4+x,3/4+z,3/4+y
+90 3/4+z,3/4+y,3/4+x
+91 1/4-x,3/4-z,3/4+y
+92 3/4+z,1/4-y,3/4-x
+93 3/4-x,3/4+z,1/4-y
+94 1/4-z,3/4-y,3/4+x
+95 3/4+x,1/4-z,3/4-y
+96 3/4-z,3/4+y,1/4-x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 96 0.21027 0.22518 0.31158 1.0000
+C2 C 96 0.16802 0.19715 0.37009 1.0000
+C3 C 96 0.04741 0.16777 0.39688 1.0000
+C4 C 96 0.09532 0.22366 0.37284 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C2 1_0_0_0 1_0_0_0 0.9998 V 96
+C1 C1 1_0_0_0 77_0_0_0 0.9999 V 96
+C2 C4 1_0_0_0 1_0_0_0 1.0000 V 96
+C2 C3 1_0_0_0 23_0_-1_0 0.9999 V 96
+C3 C4 1_0_0_0 1_0_0_0 1.0000 V 96
+C3 C4 1_0_0_0 88_-1_-1_0 1.0003 V 96
+#End of data_192-TOPOS_G8bal/Systre
+

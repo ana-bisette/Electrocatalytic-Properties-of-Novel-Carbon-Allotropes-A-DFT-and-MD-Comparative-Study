@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=simulacao  
+#SBATCH --output=/home/ana.bisette/espresso/teste_calculators/teste_qe/simulacao.out
+#SBATCH --error=/home/ana.bisette/espresso/teste_calculators/teste_qe/erro.err 
+#SBATCH --time=02:00:00  
+#SBATCH --nodes=1  
+#SBATCH --ntasks-per-node=16 
+
+module load quantum-espresso-7.1-gcc-9.4.0-22ybmei
+
+mpirun pw.x -in Pd12-OH.in > output.pwo

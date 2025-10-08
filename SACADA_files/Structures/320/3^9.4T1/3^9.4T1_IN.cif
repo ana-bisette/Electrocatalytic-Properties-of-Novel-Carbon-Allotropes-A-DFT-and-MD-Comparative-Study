@@ -1,0 +1,78 @@
+data_447-TOPOS_Zigzagcarbon(5,5)/Systre
+_audit_creation_date                2015-02-05
+_audit_creation_method              ToposPro
+_chemical_formula_structural        '3^9.4T1'
+_chemical_formula_sum               C1
+_citation_special_details
+;
+File: ccc.out.cgd. 
+;
+_cell_length_a                      24.94213
+_cell_length_b                      13.55979
+_cell_length_c                      1.50295
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   90
+_cell_volume                        508.3127
+_cell_formula_units_Z               160
+_symmetry_space_group_name_H-M      'C m m m'
+_symmetry_Int_Tables_number         65
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+3 x,-y,-z
+4 -x,y,-z
+5 -x,-y,-z
+6 x,y,-z
+7 -x,y,z
+8 x,-y,z
+9 1/2+x,1/2+y,z
+10 1/2-x,1/2-y,z
+11 1/2+x,1/2-y,-z
+12 1/2-x,1/2+y,-z
+13 1/2-x,1/2-y,-z
+14 1/2+x,1/2+y,-z
+15 1/2-x,1/2+y,z
+16 1/2+x,1/2-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 4 0.17959 0.00000 0.00000 1.0000
+C2 C 4 0.15314 0.00000 0.50000 1.0000
+C3 C 4 0.11304 0.00000 0.50000 1.0000
+C4 C 8 0.19695 0.06647 0.00000 1.0000
+C5 C 8 0.23989 0.21816 0.00000 1.0000
+C6 C 8 0.20888 0.10990 0.50000 1.0000
+C7 C 8 0.22682 0.17586 0.50000 1.0000
+C8 C 4 0.08659 0.00000 0.00000 1.0000
+C9 C 4 0.04650 0.00000 0.00000 1.0000
+C10 C 4 0.02005 0.00000 0.50000 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C2 1_0_0_0 1_0_0_-1 1.0000 V 8
+C1 C4 1_0_0_0 3_0_0_0 0.9999 V 8
+C2 C3 1_0_0_0 1_0_0_0 1.0002 V 4
+C3 C8 1_0_0_0 1_0_0_1 1.0000 V 8
+C4 C6 1_0_0_0 1_0_0_-1 1.0000 V 16
+C5 C7 1_0_0_0 1_0_0_-1 1.0000 V 16
+C5 C5 1_0_0_0 10_0_0_0 1.0000 V 4
+C6 C7 1_0_0_0 1_0_0_0 1.0001 V 8
+C8 C9 1_0_0_0 1_0_0_0 0.9999 V 4
+C9 C10 1_0_0_0 1_0_0_-1 1.0000 V 8
+C10 C10 1_0_0_0 2_0_0_0 1.0002 V 2
+#End of data_447-TOPOS_Zigzagcarbon(5,5)/Systre
+

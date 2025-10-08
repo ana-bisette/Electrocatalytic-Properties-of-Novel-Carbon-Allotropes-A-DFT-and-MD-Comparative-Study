@@ -1,0 +1,151 @@
+data_60-TOPOS_pcb4
+_audit_creation_date                2015-12-14
+_audit_creation_method              ToposPro
+_chemical_formula_structural        pcb4
+_chemical_name_systematic
+;
+pcb4
+;
+_chemical_formula_sum               C1
+_citation_special_details
+;
+Wavelength = 0.71073.; Estimated standard deviations in the unit-cell
+ dimensions: esd(a)=0.0000 esd(b)=0.0000 esd(c)=0.0000 esd(alfa)=0.00
+0 esd(beta)=0.000 esd(gamma)=0.000.; TRMX 0.000 -1.000 0.000 -1.000 0
+.000 0.000 0.000 0.000 -1.000 cI 12; SPGR Im-3m
+;
+_cell_length_a                      12.9913
+_cell_length_b                      12.9913
+_cell_length_c                      12.9913
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   90
+_cell_volume                        2192.592
+_cell_formula_units_Z               80
+_symmetry_space_group_name_H-M      'I m 3 m'
+_symmetry_Int_Tables_number         229
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+3 x,-y,-z
+4 -x,y,-z
+5 z,x,y
+6 y,z,x
+7 -z,-x,y
+8 -y,z,-x
+9 z,-x,-y
+10 -y,-z,x
+11 -z,x,-y
+12 y,-z,-x
+13 -y,-x,-z
+14 y,x,-z
+15 y,-x,z
+16 -y,x,z
+17 -x,-z,-y
+18 -z,-y,-x
+19 x,z,-y
+20 -z,y,x
+21 x,-z,y
+22 z,y,-x
+23 -x,z,y
+24 z,-y,x
+25 -x,-y,-z
+26 x,y,-z
+27 -x,y,z
+28 x,-y,z
+29 -z,-x,-y
+30 -y,-z,-x
+31 z,x,-y
+32 y,-z,x
+33 -z,x,y
+34 y,z,-x
+35 z,-x,y
+36 -y,z,x
+37 y,x,z
+38 -y,-x,z
+39 -y,x,-z
+40 y,-x,-z
+41 x,z,y
+42 z,y,x
+43 -x,-z,y
+44 z,-y,-x
+45 -x,z,-y
+46 -z,-y,x
+47 x,-z,-y
+48 -z,y,-x
+49 1/2+x,1/2+y,1/2+z
+50 1/2-x,1/2-y,1/2+z
+51 1/2+x,1/2-y,1/2-z
+52 1/2-x,1/2+y,1/2-z
+53 1/2+z,1/2+x,1/2+y
+54 1/2+y,1/2+z,1/2+x
+55 1/2-z,1/2-x,1/2+y
+56 1/2-y,1/2+z,1/2-x
+57 1/2+z,1/2-x,1/2-y
+58 1/2-y,1/2-z,1/2+x
+59 1/2-z,1/2+x,1/2-y
+60 1/2+y,1/2-z,1/2-x
+61 1/2-y,1/2-x,1/2-z
+62 1/2+y,1/2+x,1/2-z
+63 1/2+y,1/2-x,1/2+z
+64 1/2-y,1/2+x,1/2+z
+65 1/2-x,1/2-z,1/2-y
+66 1/2-z,1/2-y,1/2-x
+67 1/2+x,1/2+z,1/2-y
+68 1/2-z,1/2+y,1/2+x
+69 1/2+x,1/2-z,1/2+y
+70 1/2+z,1/2+y,1/2-x
+71 1/2-x,1/2+z,1/2+y
+72 1/2+z,1/2-y,1/2+x
+73 1/2-x,1/2-y,1/2-z
+74 1/2+x,1/2+y,1/2-z
+75 1/2-x,1/2+y,1/2+z
+76 1/2+x,1/2-y,1/2+z
+77 1/2-z,1/2-x,1/2-y
+78 1/2-y,1/2-z,1/2-x
+79 1/2+z,1/2+x,1/2-y
+80 1/2+y,1/2-z,1/2+x
+81 1/2-z,1/2+x,1/2+y
+82 1/2+y,1/2+z,1/2-x
+83 1/2+z,1/2-x,1/2+y
+84 1/2-y,1/2+z,1/2+x
+85 1/2+y,1/2+x,1/2+z
+86 1/2-y,1/2-x,1/2+z
+87 1/2-y,1/2+x,1/2-z
+88 1/2+y,1/2-x,1/2-z
+89 1/2+x,1/2+z,1/2+y
+90 1/2+z,1/2+y,1/2+x
+91 1/2-x,1/2-z,1/2+y
+92 1/2+z,1/2-y,1/2-x
+93 1/2-x,1/2+z,1/2-y
+94 1/2-z,1/2-y,1/2+x
+95 1/2+x,1/2-z,1/2-y
+96 1/2-z,1/2+y,1/2-x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 16 0.84196 0.84196 0.84196 1.0000
+C2 C 16 0.77675 0.77675 0.77675 1.0000
+C3 C 48 0.82425 0.95345 0.82425 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_voronoi_solidangle
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C2 1_0_0_0 1_0_0_0 1.4673 0.00 V 16
+C1 C3 1_0_0_0 6_0_0_0 1.4845 0.00 V 48
+C2 C2 1_0_0_0 61_1_1_1 1.2038 0.00 V 8
+C3 C3 1_0_0_0 24_0_2_0 1.2095 0.00 V 24
+#End of data_60-TOPOS_pcb4

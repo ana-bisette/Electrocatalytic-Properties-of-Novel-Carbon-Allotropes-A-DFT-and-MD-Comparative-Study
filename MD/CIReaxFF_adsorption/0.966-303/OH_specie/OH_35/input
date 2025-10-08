@@ -1,0 +1,70 @@
+# Alpha
+clear
+units		real
+dimension 3
+boundary        p p p
+atom_style	charge
+newton on
+read_data       OH_35.lmp
+
+timestep 0.25
+
+# ---------- Define Interatomic Potential --------------------- 
+pair_style      reax/c NULL checkqeq no
+pair_coeff      * * ffield.reax C H O
+fix             2 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+#------------ Equilibration of the system -------------------------
+reset_timestep 0
+
+dump 1 all custom 10 min.lammpstrj id type x y z
+
+minimize 1.0e-8 1.0e-8 100000 100000
+
+###
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+
+###
+fix 1 all box/relax aniso 0.0
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+
+unfix 1
+###
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+
+###
+fix 1 all box/relax aniso 0.0
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+
+unfix 1
+###
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+
+undump 1
+#############
+#----------- Thermo ------------
+reset_timestep 0
+thermo  200
+
+thermo_style    custom step temp etotal ke pe press
+velocity all create 300 12345 mom yes rot yes
+fix 1 all npt temp 300 300 25.0 iso 0.0 0.0 250.0
+
+variable vpe equal pe
+variable vtemp equal temp
+variable vstep equal step
+
+fix output all print 2500 "${vstep} ${vtemp} ${vpe}" file temp-tpdh-Pt.dat screen no
+
+dump 1 all custom 2500 thermo-tpdh-Pt.lammpstrj id type x y z
+
+run 1000000
+
+unfix 1
+unfix output
+undump 1

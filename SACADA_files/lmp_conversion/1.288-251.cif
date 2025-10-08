@@ -1,0 +1,77 @@
+data_4-TOPOS_3^5.4T6
+_audit_creation_date                2015-12-09
+_audit_creation_method              ToposPro
+_chemical_formula_structural        3^5.4T6
+_chemical_name_systematic
+;
+3^5.4T6
+;
+_chemical_formula_sum               C1
+_citation_special_details
+;
+Wavelength = 0.71073.; Estimated standard deviations in the unit-cell
+ dimensions: esd(a)=0.0000 esd(b)=0.0000 esd(c)=0.0000 esd(alfa)=0.00
+0 esd(beta)=0.000 esd(gamma)=0.000.; TRMX 1.000 0.000 0.000 0.000 1.0
+00 0.000 0.000 0.000 1.000 oC 3; SPGR Cmmm
+;
+_cell_length_a                      21.7894
+_cell_length_b                      9.1729
+_cell_length_c                      2.4789
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   90
+_cell_volume                        495.4627
+_cell_formula_units_Z               32
+_symmetry_space_group_name_H-M      'C m m m'
+_symmetry_Int_Tables_number         65
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+3 x,-y,-z
+4 -x,y,-z
+5 -x,-y,-z
+6 x,y,-z
+7 -x,y,z
+8 x,-y,z
+9 1/2+x,1/2+y,z
+10 1/2-x,1/2-y,z
+11 1/2+x,1/2-y,-z
+12 1/2-x,1/2+y,-z
+13 1/2-x,1/2-y,-z
+14 1/2+x,1/2+y,-z
+15 1/2-x,1/2+y,z
+16 1/2+x,1/2-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 4 0.83470 0.50000 0.00000 1.0000
+C2 C 4 0.87257 0.50000 0.50000 1.0000
+C3 C 4 0.93489 0.50000 0.50000 1.0000
+C4 C 8 0.79012 0.62936 0.00000 1.0000
+C5 C 8 0.77022 0.68747 0.50000 1.0000
+C6 C 4 0.96850 0.50000 0.00000 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_voronoi_solidangle
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C2 1_0_0_0 1_0_0_-1 1.4890 0.00 V 8
+C1 C4 1_0_0_0 3_0_1_0 1.5335 0.00 V 8
+C2 C3 1_0_0_0 1_0_0_0 1.3579 0.00 V 4
+C3 C6 1_0_0_0 1_0_0_0 1.4396 0.00 V 8
+C4 C5 1_0_0_0 1_0_0_-1 1.4172 0.00 V 16
+C5 C5 1_0_0_0 10_1_1_0 1.4465 0.00 V 4
+C6 C6 1_0_0_0 2_2_1_0 1.3727 0.00 V 2
+#End of data_4-TOPOS_3^5.4T6

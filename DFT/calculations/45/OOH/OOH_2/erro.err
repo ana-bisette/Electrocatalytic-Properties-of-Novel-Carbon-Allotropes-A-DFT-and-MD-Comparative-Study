@@ -1,0 +1,8 @@
+[n039:737835] *** An error occurred in MPI_Comm_free
+[n039:737835] *** reported by process [2938961921,7]
+[n039:737835] *** on communicator MPI_COMM_WORLD
+[n039:737835] *** MPI_ERR_COMM: invalid communicator
+[n039:737835] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n039:737835] ***    and potentially your MPI job)
+[n039:737823] 5 more processes have sent help message help-mpi-errors.txt / mpi_errors_are_fatal
+[n039:737823] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

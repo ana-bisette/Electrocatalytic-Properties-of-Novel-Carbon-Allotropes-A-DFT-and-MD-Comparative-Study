@@ -1,0 +1,9 @@
+#This is just a comment
+
+#Define charges
+charge
+C 0
+#Atom types for use with LAMMPS or IMD
+#Note that any number can be assigned to each species
+type
+C 1

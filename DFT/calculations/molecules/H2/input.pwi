@@ -1,0 +1,53 @@
+&CONTROL
+   calculation      = 'relax'
+   restart_mode     = 'from_scratch'
+   nstep            = 1000
+   tprnfor          = .true.
+   etot_conv_thr    = 0.0001
+   forc_conv_thr    = 0.001
+/
+&SYSTEM
+   tot_magnetization = 0
+   ecutwfc          = 50
+   ecutrho          = 400
+   occupations      = 'smearing'
+   degauss          = 0.0001
+   smearing         = 'gaussian'
+   nspin            = 2
+   input_dft        = 'pbe'
+   ntyp             = 1
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+   electron_maxstep = 100
+   scf_must_converge = .false.
+   conv_thr         = 1e-06
+   mixing_mode      = 'plain'
+   mixing_beta      = 0.3
+   diagonalization  = 'david'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   bfgs_ndim        = 1
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+H  1.008 H.pbe-rrkjus_psl.1.0.0.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+8.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 8.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 8.00000000000000
+
+ATOMIC_POSITIONS angstrom
+H  4.0000000000 4.0000000000 3.6310000000  
+H  4.0000000000 4.0000000000 4.3690000000  
+

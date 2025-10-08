@@ -1,0 +1,72 @@
+LAMMPS (3 Mar 2020)
+Reading data file ...
+  orthogonal box = (0 0 0) to (21.0709 21.0709 21.0709)
+  2 by 2 by 2 MPI processor grid
+  reading atoms ...
+  144 atoms
+  read_data CPU = 0.00842759 secs
+WARNING: Changed valency_val to valency_boc for X (../reaxc_ffield.cpp:315)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 4 4 4
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair reax/c, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: half/ghost/bin/3d/newtoff
+      bin: standard
+  (2) fix qeq/reax, perpetual, copy from (1)
+      attributes: half, newton off, ghost
+      pair build: copy
+      stencil: none
+      bin: none
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 17.62 | 18.59 | 21.52 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0   -24809.002            0   -24809.002   -114.37926 
+      62            0   -25245.043            0   -25245.043    58724.277 
+Loop time of 6.97763 on 8 procs for 62 steps with 144 atoms
+
+99.8% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -24809.0015222     -25245.0432556     -25245.0432556
+  Force two-norm initial, final = 2164.63 319.839
+  Force max component initial, final = 202.982 51.7157
+  Final line search alpha, max atom move = 5.37449e-14 2.77946e-12
+  Iterations, force evaluations = 62 465
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 2.6721     | 3.3638     | 5.2654     |  58.3 | 48.21
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.061814   | 1.9319     | 2.6437     |  75.7 | 27.69
+Output  | 0.0017467  | 0.0019614  | 0.0023407  |   0.4 |  0.03
+Modify  | 1.6314     | 1.632      | 1.6333     |   0.0 | 23.39
+Other   |            | 0.04801    |            |       |  0.69
+
+Nlocal:    18 ave 72 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    616 ave 688 max 592 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Neighs:    1174 ave 4696 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 9392
+Ave neighs/atom = 65.2222
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 62
+slurmstepd: error: *** JOB 43278 ON n017 CANCELLED AT 2024-01-24T16:21:40 DUE TO TIME LIMIT ***

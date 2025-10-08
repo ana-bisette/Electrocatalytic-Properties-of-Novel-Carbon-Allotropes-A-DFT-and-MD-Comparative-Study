@@ -1,0 +1,87 @@
+data_117-TOPOS_3^6,4T12
+_audit_creation_date                2016-10-26
+_audit_creation_method              ToposPro
+_chemical_formula_structural        3^6,4T12
+_chemical_formula_sum               C1
+_citation_special_details
+;
+Citation details: File: hyperlonsdaleite_HL_C28_3^6,4T12.cif.. File: 
+3_6,4T12.cif. 
+;
+_cell_length_a                      11.2217
+_cell_length_b                      11.2217
+_cell_length_c                      18.3751
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   120
+_cell_volume                        2003.907
+_cell_formula_units_Z               112
+_symmetry_space_group_name_H-M      'P 63/m m c'
+_symmetry_Int_Tables_number         194
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,1/2+z
+3 -y,x-y,z
+4 -x+y,-x,z
+5 x-y,x,1/2+z
+6 y,-x+y,1/2+z
+7 x-y,-y,-z
+8 -x,-x+y,-z
+9 y,x,-z
+10 -y,-x,1/2-z
+11 x,x-y,1/2-z
+12 -x+y,y,1/2-z
+13 -x,-y,-z
+14 x,y,1/2-z
+15 y,-x+y,-z
+16 x-y,x,-z
+17 -x+y,-x,1/2-z
+18 -y,x-y,1/2-z
+19 -x+y,y,z
+20 x,x-y,z
+21 -y,-x,z
+22 y,x,1/2+z
+23 -x,-x+y,1/2+z
+24 x-y,-y,1/2+z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 12 0.26246 0.52492 0.17075 1.0000
+C2 C 4 0.33333 0.66667 0.20782 1.0000
+C3 C 12 0.40652 0.81304 0.95546 1.0000
+C4 C 12 0.46273 0.92547 0.01390 1.0000
+C5 C 24 0.54857 0.88406 0.06144 1.0000
+C6 C 12 0.21664 0.78337 0.02524 1.0000
+C7 C 12 0.26145 0.73855 0.95848 1.0000
+C8 C 24 0.14480 0.50517 0.13267 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_voronoi_solidangle
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C8 1_0_0_0 19_0_0_0 1.4105 30.06 V 24
+C1 C2 1_0_0_0 1_0_0_0 1.5367 23.63 V 12
+C1 C1 1_0_0_0 12_0_0_0 2.9125 12.90 W 6
+C2 C2 1_0_0_0 10_1_1_0 1.5501 27.14 V 2
+C3 C7 1_0_0_0 4_0_1_0 1.4111 29.69 V 24
+C3 C4 1_0_0_0 1_0_0_1 1.5320 23.29 V 12
+C4 C5 1_0_0_0 1_0_0_0 1.5344 23.25 V 24
+C4 C4 1_0_0_0 7_1_2_0 1.5360 24.35 V 6
+C5 C8 1_0_0_0 21_1_1_0 1.4094 29.79 V 24
+C5 C6 1_0_0_0 4_0_1_0 1.4111 29.75 V 24
+C6 C7 1_0_0_0 1_0_0_-1 1.5045 26.86 V 12
+C8 C8 1_0_0_0 20_0_1_0 1.5089 27.07 V 12
+#End of data_117-TOPOS_3^6,4T12
+

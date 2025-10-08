@@ -1,0 +1,446 @@
+LAMMPS (3 Mar 2020)
+Reading data file ...
+  orthogonal box = (0 0 0) to (8 8 8)
+  2 by 2 by 2 MPI processor grid
+  reading atoms ...
+  3 atoms
+  read_data CPU = 0.00637732 secs
+WARNING: Changed valency_val to valency_boc for X (../reaxc_ffield.cpp:315)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 2 2 2
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair reax/c, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: half/ghost/bin/3d/newtoff
+      bin: standard
+  (2) fix qeq/reax, perpetual, copy from (1)
+      attributes: half, newton off, ghost
+      pair build: copy
+      stencil: none
+      bin: none
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 9.992 | 10.47 | 11.2 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0   -7.4735248            0   -7.4735248    4676.9833 
+      18            0    -145.0244            0    -145.0244   -33.000942 
+Loop time of 0.0232289 on 8 procs for 18 steps with 3 atoms
+
+95.2% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -7.47352477494     -145.024395273     -145.024395869
+  Force two-norm initial, final = 120.109 0.00251345
+  Force max component initial, final = 89.6668 0.00141241
+  Final line search alpha, max atom move = 1 0.00141241
+  Iterations, force evaluations = 18 27
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0070686  | 0.0076263  | 0.0086647  |   0.6 | 32.83
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0020073  | 0.0030154  | 0.0036871  |   1.1 | 12.98
+Output  | 3.1777e-05 | 3.9599e-05 | 5.0843e-05 |   0.0 |  0.17
+Modify  | 0.011385   | 0.011404   | 0.011492   |   0.0 | 49.10
+Other   |            | 0.001143   |            |       |  4.92
+
+Nlocal:    0.375 ave 1 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+Nghost:    153.625 ave 160 max 147 min
+Histogram: 4 0 0 0 0 0 0 0 0 4
+Neighs:    19.5 ave 54 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+
+Total # of neighbors = 156
+Ave neighs/atom = 52
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 18
+Per MPI rank memory allocation (min/avg/max) = 9.992 | 10.47 | 11.2 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      18            0    -145.0244            0    -145.0244   -33.000733 
+      19            0    -145.0244            0    -145.0244    -33.20938 
+Loop time of 0.00993434 on 8 procs for 1 steps with 3 atoms
+
+97.8% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -145.024395853     -145.024395853     -145.024396176
+  Force two-norm initial, final = 0.00251694 0.0012073
+  Force max component initial, final = 0.00141241 0.000767045
+  Final line search alpha, max atom move = 0.03125 2.39702e-05
+  Iterations, force evaluations = 1 11
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0026145  | 0.0029734  | 0.0033165  |   0.4 | 29.93
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00068686 | 0.0010711  | 0.0014808  |   0.8 | 10.78
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0.0055193  | 0.0055338  | 0.0055643  |   0.0 | 55.70
+Other   |            | 0.000356   |            |       |  3.58
+
+Nlocal:    0.375 ave 1 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+Nghost:    146.625 ave 160 max 131 min
+Histogram: 2 0 0 0 0 4 0 0 0 2
+Neighs:    18 ave 48 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+
+Total # of neighbors = 144
+Ave neighs/atom = 48
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 19
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+Per MPI rank memory allocation (min/avg/max) = 9.992 | 10.47 | 11.2 Mbytes
+Step Temp E_pair E_mol TotEng Press Volume 
+      19            0    -145.0244            0    -145.0244    -33.19826          512 
+    1315            0   -145.13528            0   -145.13528    9.9902792    526.23958 
+Loop time of 1.03875 on 8 procs for 1296 steps with 3 atoms
+
+96.9% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -145.024395345     -145.135277215     -145.135275837
+  Force two-norm initial, final = 1.00434 0.20889
+  Force max component initial, final = 0.989221 0.114851
+  Final line search alpha, max atom move = 2.83731e-07 3.25868e-08
+  Iterations, force evaluations = 1296 1322
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.30388    | 0.34799    | 0.38589    |   4.3 | 33.50
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.07994    | 0.12243    | 0.17207    |   8.7 | 11.79
+Output  | 0.003666   | 0.0045934  | 0.0059745  |   1.0 |  0.44
+Modify  | 0.47926    | 0.48025    | 0.48349    |   0.2 | 46.23
+Other   |            | 0.08349    |            |       |  8.04
+
+Nlocal:    0.375 ave 1 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+Nghost:    146.625 ave 160 max 131 min
+Histogram: 2 0 0 0 0 4 0 0 0 2
+Neighs:    18 ave 48 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+
+Total # of neighbors = 144
+Ave neighs/atom = 48
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 1315
+Per MPI rank memory allocation (min/avg/max) = 9.976 | 10.45 | 11.18 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1315            0   -145.13528            0   -145.13528    9.9943087 
+    1317            0   -145.13528            0   -145.13528   0.97600833 
+Loop time of 0.0295628 on 8 procs for 2 steps with 3 atoms
+
+97.9% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -145.135275515     -145.135279371      -145.13527834
+  Force two-norm initial, final = 0.162363 0.0374248
+  Force max component initial, final = 0.115012 0.0265129
+  Final line search alpha, max atom move = 7.62939e-06 2.02278e-07
+  Iterations, force evaluations = 2 40
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0094587  | 0.0098193  | 0.010587   |   0.4 | 33.21
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0021476  | 0.0028122  | 0.0033664  |   0.9 |  9.51
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0.015883   | 0.015936   | 0.016031   |   0.0 | 53.91
+Other   |            | 0.0009953  |            |       |  3.37
+
+Nlocal:    0.375 ave 1 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+Nghost:    107.625 ave 108 max 107 min
+Histogram: 3 0 0 0 0 0 0 0 0 5
+Neighs:    15.75 ave 44 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+
+Total # of neighbors = 126
+Ave neighs/atom = 42
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 1317
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+Per MPI rank memory allocation (min/avg/max) = 10.18 | 10.83 | 11.18 Mbytes
+Step Temp E_pair E_mol TotEng Press Volume 
+    1317            0   -145.13528            0   -145.13528   0.98929217    526.23958 
+    1401            0   -145.13765            0   -145.13765    8.0702077    532.21941 
+Loop time of 0.068233 on 8 procs for 84 steps with 3 atoms
+
+96.0% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -145.135277286     -145.137648198      -145.13765067
+  Force two-norm initial, final = 0.213386 0.163786
+  Force max component initial, final = 0.163572 0.087253
+  Final line search alpha, max atom move = 7.16294e-05 6.24987e-06
+  Iterations, force evaluations = 84 93
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.021874   | 0.022634   | 0.024052   |   0.5 | 33.17
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0049967  | 0.0062816  | 0.0074216  |   1.0 |  9.21
+Output  | 0.00030897 | 0.00036531 | 0.00045514 |   0.0 |  0.54
+Modify  | 0.033208   | 0.033328   | 0.033536   |   0.1 | 48.84
+Other   |            | 0.005625   |            |       |  8.24
+
+Nlocal:    0.375 ave 1 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+Nghost:    107.625 ave 108 max 107 min
+Histogram: 3 0 0 0 0 0 0 0 0 5
+Neighs:    15.75 ave 44 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+
+Total # of neighbors = 126
+Ave neighs/atom = 42
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 1401
+Per MPI rank memory allocation (min/avg/max) = 10.18 | 10.95 | 11.18 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1401            0   -145.13765            0   -145.13765    8.0792907 
+    1402            0   -145.13765            0   -145.13765    8.0955914 
+Loop time of 0.0271475 on 8 procs for 1 steps with 3 atoms
+
+95.4% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -145.137649943     -145.137649943     -145.137648639
+  Force two-norm initial, final = 0.10715 0.107379
+  Force max component initial, final = 0.0758079 0.0760118
+  Final line search alpha, max atom move = 9.53674e-07 7.24905e-08
+  Iterations, force evaluations = 1 37
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0087728  | 0.0091243  | 0.0098317  |   0.4 | 33.61
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0020376  | 0.0026929  | 0.0031547  |   0.8 |  9.92
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0.014454   | 0.014516   | 0.014581   |   0.0 | 53.47
+Other   |            | 0.0008146  |            |       |  3.00
+
+Nlocal:    0.375 ave 1 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+Nghost:    107.625 ave 108 max 107 min
+Histogram: 3 0 0 0 0 0 0 0 0 5
+Neighs:    15.75 ave 44 max 0 min
+Histogram: 5 0 0 0 0 0 0 0 0 3
+
+Total # of neighbors = 126
+Ave neighs/atom = 42
+Neighbor list builds = 0
+Dangerous builds = 0
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 0.25
+Per MPI rank memory allocation (min/avg/max) = 8.851 | 9.33 | 10.06 Mbytes
+Step Temp TotEng KinEng PotEng Press 
+       0          300   -143.34916     1.788486   -145.13765    161.70957 
+     200    179.87748   -141.10265    1.0723612   -142.17502    1654.3135 
+     400      145.138   -140.03336    0.8652576   -140.89861   -2419.3263 
+     600     174.6835    -141.2242    1.0413967    -142.2656    1821.7339 
+     800    235.24743   -141.07294    1.4024558    -142.4754   -2279.8411 
+    1000     760.6076   -138.81101    4.5344536   -143.34547   -128.29467 
+    1200    52.593143   -142.22125   0.31354034   -142.53479    1889.1699 
+    1400     225.6605   -143.10311    1.3453021   -144.44841   -832.10119 
+    1600    237.39679   -141.06419    1.4152695   -142.47946    1737.2049 
+    1800    201.11005   -138.91714    1.1989417   -140.11608   -762.08286 
+    2000    148.55874   -141.86471   0.88565078   -142.75036    311.28935 
+    2200    248.58136   -141.66166    1.4819476   -143.14361   -71.042038 
+    2400    317.40182   -139.50614    1.8922291   -141.39837   -124.16848 
+    2600    249.03181    -139.7086    1.4846331   -141.19323   -197.38146 
+    2800    166.47433   -141.96167   0.99245673   -142.95413    90.019317 
+    3000     551.0665   -139.62114    3.2852491   -142.90639   -30.645435 
+    3200    309.46636   -140.48976    1.8449209   -142.33468    91.657201 
+    3400    131.15576     -142.227   0.78190079    -143.0089   -59.455886 
+    3600    110.77639   -141.88396   0.66040677   -142.54436    59.794867 
+    3800    849.77204   -139.83971    5.0660181   -144.90572     -11.4623 
+    4000    433.88452   -141.28844    2.5866547   -143.87509    52.413093 
+    4200    248.60593   -143.30038    1.4820941   -144.78247   -2.0885596 
+    4400    218.19865   -139.95573    1.3008174   -141.25654   -37.861749 
+    4600     297.4084   -138.73096    1.7730359   -140.50399    44.504305 
+    4800    268.40958   -141.30869    1.6001559   -142.90884    7.9777648 
+    5000     973.4531   -138.62083    5.8033576   -144.42419    20.218824 
+    5200    300.03618   -140.74889    1.7887017    -142.5376    9.0032319 
+    5400    188.77481   -141.62466    1.1254037   -142.75006   -3.9740005 
+    5600    33.451685   -138.79125   0.19942624   -138.99067   -14.498245 
+    5800    145.29386   -141.43538   0.86618677   -142.30157    -9.395124 
+    6000    159.75178   -141.67167   0.95237944   -142.62405   -3.8621451 
+    6200    452.93451   -138.06269    2.7002235   -140.76292    2.3101548 
+    6400    475.63334   -140.94269    2.8355453   -143.77823    5.8408182 
+    6600    375.98155   -140.76404    2.2414592    -143.0055    1.8302752 
+    6800    150.54423   -138.98292    0.8974875   -139.88041   -2.9165446 
+    7000    24.343522   -141.91741   0.14512683   -142.06254   0.11731925 
+    7200    202.98197   -141.18671    1.2101014   -142.39681   -1.7227459 
+    7400    731.17292   -138.81333    4.3589752   -143.17231  -0.90763422 
+    7600    433.05763   -141.97059    2.5817251   -144.55232    1.5484276 
+    7800     600.4953   -141.34119    3.5799249   -144.92111   0.75882553 
+    8000    405.81467   -140.80435    2.4193129   -143.22366    0.4626536 
+    8200    36.937632   -141.63649   0.22020813    -141.8567   0.22929833 
+    8400    43.757374   -140.75608   0.26086484   -141.01694    -1.283502 
+    8600    564.01869   -139.54106    3.3624651   -142.90352  -0.63282536 
+    8800    105.77517   -142.25953    0.6305914   -142.89012   0.08778076 
+    9000    268.65431   -141.06343    1.6016149   -142.66505  -0.15292329 
+    9200    499.32765   -140.40373    2.9768018   -143.38053   0.50274306 
+    9400    226.77569   -142.21776    1.3519505   -143.56971  0.035559025 
+    9600    90.096188   -142.00492   0.53711925   -142.54204   0.12374119 
+    9800    543.14317   -139.55996    3.2380132   -142.79797  -0.18770914 
+   10000    183.40284   -141.74437    1.0933781   -142.83774   0.01548929 
+   10200      75.6302   -143.66509   0.45087852   -144.11597 -0.019279278 
+   10400    201.76103   -142.89718    1.2028226   -144.10001 -0.021909105 
+   10600    388.25482   -140.44543    2.3146278   -142.76006  0.013970423 
+   10800    384.02368   -140.27914    2.2894033   -142.56854 -0.084077165 
+   11000    117.78873   -143.04833   0.70221166   -143.75054 -0.021866288 
+   11200    267.11221   -142.66767    1.5924215   -144.26009 0.0075190202 
+   11400     270.5659   -141.43914    1.6130111   -143.05215 -0.029000417 
+   11600    256.20676   -139.79936    1.5274074   -141.32676  0.030700036 
+   11800    240.39016   -140.88065    1.4331148   -142.31377  0.026775645 
+   12000    57.999795   -142.18679   0.34577274   -142.53256 -0.014368244 
+   12200    363.00038   -140.20706    2.1640704   -142.37113 0.0070587475 
+   12400    170.57829   -139.73683     1.016923   -140.75375   0.02137554 
+   12600    271.59761   -141.64699    1.6191617   -143.26615 0.0054130643 
+   12800    346.37639   -140.81865    2.0649644   -142.88362 -0.0047208162 
+   13000    200.60346   -139.64339    1.1959216   -140.83931  0.014339629 
+   13200     197.8871   -141.54171    1.1797277   -142.72143 0.0034598448 
+   13400    22.742751   -142.57302   0.13558364   -142.70861 -0.0016037665 
+   13600    249.72779   -140.53746    1.4887822   -142.02625 0.0049655142 
+   13800    93.559179   -139.48849   0.55776428   -140.04625 0.0063567266 
+   14000    281.15445   -141.64984     1.676136   -143.32598 0.0024743211 
+   14200    154.51344    -141.3787   0.92115041   -142.29985 -0.003420271 
+   14400    294.53267   -139.44081    1.7558919    -141.1967 -0.0031625765 
+   14600    172.57874   -141.41645    1.0288489    -142.4453 0.0040888755 
+   14800    242.74352   -140.69694    1.4471447   -142.14408 0.0049774739 
+   15000    425.88229   -138.76597    2.5389484   -141.30491 -0.0071653526 
+   15200    157.89538   -141.50365   0.94131224   -142.44496 0.0021718275 
+   15400    675.75902    -137.8183    4.0286185   -141.84691 0.0033017806 
+   15600    92.261388   -140.93604   0.55002735   -141.48607 0.0029066742 
+   15800    357.13518   -140.88573    2.1291043   -143.01483 0.00017621727 
+   16000    787.72868   -137.65968    4.6961391   -142.35582 0.00019555496 
+   16200    263.51453   -141.13757    1.5709735   -142.70855 0.0010423436 
+   16400    260.43941   -140.24644    1.5526408   -141.79908 -0.00097131956 
+   16600    258.83653   -141.12474     1.543085   -142.66783 -0.00021407271 
+   16800    183.51974   -141.67921     1.094075   -142.77329 -5.1613015e-05 
+   17000    603.49983   -139.06531    3.5978367   -142.66315 0.00022620552 
+   17200    122.29639    -141.4759   0.72908463   -142.20498 -0.00052297605 
+   17400    539.87318    -140.0191    3.2185188   -143.23762 0.00013398443 
+   17600    414.09021   -139.97599    2.4686485   -142.44464 -8.1296445e-05 
+   17800    171.21477   -141.63911    1.0207174   -142.65983 0.00013206105 
+   18000    498.34382   -139.24654    2.9709365   -142.21747 -0.00046201909 
+   18200    51.353553    -143.0096   0.30615038   -143.31575 8.7635283e-05 
+   18400    522.79614   -141.45707     3.116712   -144.57378 -0.00010922322 
+   18600    422.13769   -140.01424    2.5166246   -142.53086 0.00018264784 
+   18800    103.01078     -141.811   0.61411112   -142.42511 -0.00016418324 
+   19000    40.615844   -143.64968   0.24213623   -143.89181 5.0461747e-05 
+   19200    439.38828   -141.31441     2.619466   -143.93387 -8.3600275e-05 
+   19400    422.65712   -139.74366    2.5197212   -142.26338 0.00018194862 
+   19600    200.16417   -139.74478    1.1933027   -140.93808 0.00017823744 
+   19800    216.92387   -141.69268    1.2932177   -142.98589 -2.0244293e-05 
+   20000    371.22634   -139.08182    2.2131104   -141.29493 -2.2546641e-05 
+   20200    186.62975    -141.1991    1.1126157   -142.31172 6.1028613e-05 
+   20400    180.43507   -142.31367    1.0756854   -143.38935 -3.0293487e-05 
+   20600    243.11217   -141.50322    1.4493424   -142.95257 7.5652557e-06 
+   20800     272.7128   -140.30471    1.6258101   -141.93052 1.3206129e-05 
+   21000    349.44519   -140.13001    2.0832595   -142.21327 -2.0115649e-05 
+   21200    171.53366   -142.28237    1.0226185   -143.30499 1.2660737e-06 
+   21400     175.0633   -143.27146    1.0436609   -144.31512 1.8368918e-06 
+   21600    584.03629   -140.58228    3.4818025   -144.06409 -8.765825e-06 
+   21800    198.19874   -141.63262    1.1815856   -142.81421 -1.4836834e-05 
+   22000     79.78026   -143.93074    0.4756196   -144.40636 6.4606119e-06 
+   22200    143.48925   -143.13407   0.85542843    -143.9895 6.0517098e-07 
+   22400    171.37164   -141.32765    1.0216526   -142.34931 -9.0727705e-06 
+   22600    484.85221   -140.34951    2.8905047   -143.24001 -9.1726924e-06 
+   22800     132.5336   -143.43376   0.79011497   -144.22387 -1.4757471e-06 
+   23000    234.76608   -141.37527    1.3995862   -142.77485 9.0405886e-07 
+   23200    553.65138   -141.23526    3.3006592   -144.53592 9.9310382e-06 
+   23400     122.2636   -142.95359   0.72888913   -143.68248 -4.732861e-06 
+   23600    178.17437   -143.86872    1.0622079   -144.93093 -2.7436177e-06 
+   23800    191.78173   -141.83208    1.1433298   -142.97541 8.9185789e-06 
+   24000    455.05506   -140.70309    2.7128654   -143.41595 -2.6711998e-06 
+   24200    305.12756   -142.63936    1.8190546   -144.45841 1.1683867e-06 
+   24400    54.843524   -142.97974   0.32695625    -143.3067 -2.8718826e-06 
+   24600    575.16028   -139.96285    3.4288871   -143.39173 -1.6841324e-06 
+   24800    261.97748   -142.76595    1.5618102   -144.32776 1.0690723e-06 
+   25000    64.662651   -143.95613   0.38549416   -144.34163 -1.8667229e-07 
+   25200    160.08511   -143.38542   0.95436658   -144.33978 -8.4247865e-07 
+   25400    211.50359   -141.15707     1.260904   -142.41797 9.5575715e-07 
+   25600    571.50612   -140.88103    3.4071024   -144.28813 -4.4364926e-07 
+   25800    182.40656   -143.36297    1.0874386   -144.45041 6.316802e-07 
+   26000    384.74274   -141.20458    2.2936901   -143.49827 -4.8499907e-07 
+   26200    426.48772   -141.41596    2.5425578   -143.95851 3.787998e-07 
+   26400    84.429342   -143.09096   0.50333567    -143.5943 -3.557796e-07 
+   26600    92.688274   -143.04529   0.55257228   -143.59786 2.5039281e-07 
+   26800     389.0724   -140.24499    2.3195018    -142.5645 -3.5298855e-07 
+ERROR on proc 1: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 2: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 3: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 4: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 5: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 6: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 7: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+ERROR on proc 0: Too many neighbor bins (../nbin_standard.cpp:184)
+Last command: run 1000000
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 7 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[n019:3380690] 7 more processes have sent help message help-mpi-api.txt / mpi-abort
+[n019:3380690] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

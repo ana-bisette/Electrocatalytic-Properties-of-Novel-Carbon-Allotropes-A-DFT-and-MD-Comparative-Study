@@ -1,0 +1,295 @@
+LAMMPS (3 Mar 2020)
+Reading data file ...
+  orthogonal box = (0 0 0) to (21.884 21.886 21.885)
+  2 by 2 by 2 MPI processor grid
+  reading atoms ...
+  145 atoms
+  read_data CPU = 0.0372996 secs
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 9.5
+  ghost atom cutoff = 9.5
+  binsize = 4.75, bins = 5 5 5
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair reax/c, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: half/ghost/bin/3d/newtoff
+      bin: standard
+  (2) fix qeq/reax, perpetual, copy from (1)
+      attributes: half, newton off, ghost
+      pair build: copy
+      stencil: none
+      bin: none
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 12.67 | 13.31 | 15.21 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0   -26265.349            0   -26265.349    1112.6001 
+      41            0   -26300.825            0   -26300.825    652.70075 
+Loop time of 0.370529 on 8 procs for 41 steps with 145 atoms
+
+99.5% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -26265.3494794     -26300.8245689     -26300.8247057
+  Force two-norm initial, final = 259.382 93.5419
+  Force max component initial, final = 157.676 25.0471
+  Final line search alpha, max atom move = 1.1732e-05 0.000293853
+  Iterations, force evaluations = 41 156
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.099319   | 0.11941    | 0.18142    |   9.9 | 32.23
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0031994  | 0.063164   | 0.085514   |  13.1 | 17.05
+Output  | 0.00023239 | 0.00025498 | 0.00028726 |   0.0 |  0.07
+Modify  | 0.18365    | 0.18412    | 0.18436    |   0.1 | 49.69
+Other   |            | 0.003584   |            |       |  0.97
+
+Nlocal:    18.125 ave 73 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    309.625 ave 317 max 307 min
+Histogram: 3 3 0 0 0 0 0 0 1 1
+Neighs:    596.125 ave 2406 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 4769
+Ave neighs/atom = 32.8897
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 41
+Per MPI rank memory allocation (min/avg/max) = 12.67 | 13.33 | 15.21 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      41            0   -26300.825            0   -26300.825    652.70075 
+      88            0   -26309.823            0   -26309.823   -1181.9237 
+Loop time of 0.39833 on 8 procs for 47 steps with 145 atoms
+
+99.6% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -26300.8247057     -26309.8228762     -26309.8228762
+  Force two-norm initial, final = 93.5419 50.0637
+  Force max component initial, final = 25.0471 15.6354
+  Final line search alpha, max atom move = 0.00371484 0.0580829
+  Iterations, force evaluations = 47 168
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10726    | 0.12913    | 0.19542    |  10.2 | 32.42
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0035103  | 0.067952   | 0.09171    |  13.7 | 17.06
+Output  | 0.00023229 | 0.00025102 | 0.00028005 |   0.0 |  0.06
+Modify  | 0.19702    | 0.19751    | 0.19779    |   0.1 | 49.58
+Other   |            | 0.003496   |            |       |  0.88
+
+Nlocal:    18.125 ave 72 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    310.375 ave 319 max 307 min
+Histogram: 5 0 1 0 0 0 0 1 0 1
+Neighs:    600.5 ave 2388 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 4804
+Ave neighs/atom = 33.131
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 88
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+Per MPI rank memory allocation (min/avg/max) = 12.67 | 13.33 | 15.21 Mbytes
+Step Temp E_pair E_mol TotEng Press Volume 
+      88            0   -26309.823            0   -26309.823   -1181.9237    10481.891 
+     101            0   -26309.988            0   -26309.988   -50.938191    10475.521 
+Loop time of 0.104142 on 8 procs for 13 steps with 145 atoms
+
+99.5% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -26309.8228762     -26309.9880627     -26309.9880627
+  Force two-norm initial, final = 322.628 30.3044
+  Force max component initial, final = 227.138 18.93
+  Final line search alpha, max atom move = 1.00941e-11 1.9108e-10
+  Iterations, force evaluations = 13 58
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.037135   | 0.044709   | 0.067278   |   5.9 | 42.93
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0013209  | 0.023257   | 0.031559   |   8.0 | 22.33
+Output  | 0.00011703 | 0.00012892 | 0.00014831 |   0.0 |  0.12
+Modify  | 0.033974   | 0.034159   | 0.034258   |   0.1 | 32.80
+Other   |            | 0.001888   |            |       |  1.81
+
+Nlocal:    18.125 ave 72 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    310.375 ave 319 max 306 min
+Histogram: 3 0 2 1 0 0 0 1 0 1
+Neighs:    597 ave 2369 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 4776
+Ave neighs/atom = 32.9379
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 101
+Per MPI rank memory allocation (min/avg/max) = 12.67 | 13.33 | 15.21 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     101            0   -26309.988            0   -26309.988   -50.938191 
+     117            0   -26310.285            0   -26310.285   -97.553929 
+Loop time of 0.234836 on 8 procs for 16 steps with 145 atoms
+
+99.6% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -26309.9880627     -26310.2845025      -26310.284701
+  Force two-norm initial, final = 22.938 43.7097
+  Force max component initial, final = 7.06863 16.6877
+  Final line search alpha, max atom move = 0.0238313 0.397691
+  Iterations, force evaluations = 16 102
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.065232   | 0.078872   | 0.11981    |   8.1 | 33.59
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0020566  | 0.042004   | 0.05684    |  10.9 | 17.89
+Output  | 5.914e-05  | 6.4225e-05 | 7.2044e-05 |   0.0 |  0.03
+Modify  | 0.1116     | 0.11191    | 0.11208    |   0.1 | 47.65
+Other   |            | 0.001989   |            |       |  0.85
+
+Nlocal:    18.125 ave 72 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    310.375 ave 319 max 306 min
+Histogram: 3 0 2 1 0 0 0 1 0 1
+Neighs:    597.375 ave 2371 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 4779
+Ave neighs/atom = 32.9586
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 117
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+Per MPI rank memory allocation (min/avg/max) = 12.67 | 13.33 | 15.21 Mbytes
+Step Temp E_pair E_mol TotEng Press Volume 
+     117            0   -26310.285            0   -26310.285   -97.553929    10475.521 
+     189            0    -26310.93            0    -26310.93   -119.01619    10474.013 
+Loop time of 0.280163 on 8 procs for 72 steps with 145 atoms
+
+99.5% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -26310.284701     -26310.9295807     -26310.9295807
+  Force two-norm initial, final = 207.965 49.7644
+  Force max component initial, final = 178.745 30.8601
+  Final line search alpha, max atom move = 3.94628e-12 1.21783e-10
+  Iterations, force evaluations = 72 157
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.099087   | 0.11886    | 0.17951    |   9.7 | 42.42
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0031896  | 0.061909   | 0.083971   |  13.0 | 22.10
+Output  | 0.00039974 | 0.0004305  | 0.00047452 |   0.0 |  0.15
+Modify  | 0.093363   | 0.093832   | 0.09412    |   0.1 | 33.49
+Other   |            | 0.005135   |            |       |  1.83
+
+Nlocal:    18.125 ave 72 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    310.375 ave 319 max 306 min
+Histogram: 3 0 2 1 0 0 0 1 0 1
+Neighs:    597.375 ave 2371 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 4779
+Ave neighs/atom = 32.9586
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 189
+Per MPI rank memory allocation (min/avg/max) = 12.67 | 13.33 | 15.21 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     189            0    -26310.93            0    -26310.93   -119.01619 
+     197            0   -26311.026            0   -26311.026   -216.82574 
+Loop time of 0.108031 on 8 procs for 8 steps with 145 atoms
+
+99.6% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -26310.9295807      -26311.025465     -26311.0255538
+  Force two-norm initial, final = 35.1934 36.2591
+  Force max component initial, final = 8.90525 7.5318
+  Final line search alpha, max atom move = 0.000848042 0.00638728
+  Iterations, force evaluations = 8 46
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.030005   | 0.036327   | 0.055238   |   5.5 | 33.63
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0010155  | 0.019359   | 0.026276   |   7.3 | 17.92
+Output  | 5.8379e-05 | 6.3808e-05 | 7.2325e-05 |   0.0 |  0.06
+Modify  | 0.051092   | 0.051232   | 0.0513     |   0.0 | 47.42
+Other   |            | 0.001049   |            |       |  0.97
+
+Nlocal:    18.125 ave 72 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+Nghost:    311.125 ave 321 max 306 min
+Histogram: 3 0 1 2 0 0 1 0 0 1
+Neighs:    597.25 ave 2371 max 0 min
+Histogram: 6 0 0 0 0 0 0 0 0 2
+
+Total # of neighbors = 4778
+Ave neighs/atom = 32.9517
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 0.25
+Per MPI rank memory allocation (min/avg/max) = 11.54 | 12.33 | 14.09 Mbytes
+Step Temp TotEng KinEng PotEng Press 
+       0          300   -26182.255    128.77099   -26311.026    345.17617 
+     200    226.86152   -26137.533    97.377279   -26234.911    1556.4603 
+     400     276.5656   -26074.809    118.71209   -26193.521    1650.4647 
+slurmstepd: error: *** JOB 53963 ON n014 CANCELLED AT 2024-09-15T11:13:12 DUE TO TIME LIMIT ***

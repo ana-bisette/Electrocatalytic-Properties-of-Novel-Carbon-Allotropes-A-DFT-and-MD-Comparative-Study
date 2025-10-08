@@ -1,0 +1,16 @@
+[n010:867022] *** An error occurred in MPI_Comm_free
+[n010:867022] *** reported by process [2311913473,11]
+[n010:867022] *** on communicator MPI_COMM_WORLD
+[n010:867022] *** MPI_ERR_COMM: invalid communicator
+[n010:867022] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n010:867022] ***    and potentially your MPI job)
+[n010:867007] 5 more processes have sent help message help-mpi-errors.txt / mpi_errors_are_fatal
+[n010:867007] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[warn] Epoll MOD(1) on fd 24 failed.  Old events were 6; read change was 0 (none); write change was 2 (del): Bad file descriptor
+[warn] Epoll MOD(4) on fd 24 failed.  Old events were 6; read change was 2 (del); write change was 0 (none): Bad file descriptor
+[warn] Epoll MOD(1) on fd 28 failed.  Old events were 6; read change was 0 (none); write change was 2 (del): Bad file descriptor
+[warn] Epoll MOD(4) on fd 28 failed.  Old events were 6; read change was 2 (del); write change was 0 (none): Bad file descriptor
+[warn] Epoll MOD(1) on fd 32 failed.  Old events were 6; read change was 0 (none); write change was 2 (del): Bad file descriptor
+[warn] Epoll MOD(4) on fd 32 failed.  Old events were 6; read change was 2 (del); write change was 0 (none): Bad file descriptor
+[warn] Epoll MOD(1) on fd 23 failed.  Old events were 6; read change was 0 (none); write change was 2 (del): Bad file descriptor
+[warn] Epoll MOD(4) on fd 23 failed.  Old events were 6; read change was 2 (del); write change was 0 (none): Bad file descriptor

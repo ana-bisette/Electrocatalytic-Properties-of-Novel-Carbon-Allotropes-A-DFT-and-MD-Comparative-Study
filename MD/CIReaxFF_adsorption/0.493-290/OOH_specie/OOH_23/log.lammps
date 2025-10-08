@@ -1,0 +1,432 @@
+LAMMPS (3 Mar 2020)
+# Alpha
+clear
+units		real
+dimension 3
+boundary        p p p
+atom_style	charge
+newton on
+read_data       OOH_23.lmp
+  triclinic box = (0 0 0) to (15.77 13.6581 25.747) with tilt (7.8845 0 0)
+  2 by 2 by 2 MPI processor grid
+  reading atoms ...
+  131 atoms
+  read_data CPU = 0.0290926 secs
+
+timestep 0.25
+
+# ---------- Define Interatomic Potential ---------------------
+pair_style      reax/c NULL checkqeq no
+pair_coeff      * * ffield.reax C H O
+fix             2 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+#------------ Equilibration of the system -------------------------
+reset_timestep 0
+
+dump 1 all custom 10 min.lammpstrj id type x y z
+
+minimize 1.0e-8 1.0e-8 100000 100000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 9.5
+  ghost atom cutoff = 9.5
+  binsize = 4.75, bins = 5 3 6
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair reax/c, perpetual
+      attributes: half, newton off, ghost
+      pair build: half/bin/newtoff/ghost
+      stencil: half/ghost/bin/3d/newtoff
+      bin: standard
+  (2) fix qeq/reax, perpetual, copy from (1)
+      attributes: half, newton off, ghost
+      pair build: copy
+      stencil: none
+      bin: none
+Per MPI rank memory allocation (min/avg/max) = 16.41 | 16.92 | 17.48 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0   -19548.913            0   -19548.913    64849.245 
+     184            0   -22074.602            0   -22074.602    10794.537 
+Loop time of 17.6005 on 8 procs for 184 steps with 131 atoms
+
+98.9% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -19548.9125096     -22074.6024576     -22074.6024939
+  Force two-norm initial, final = 5128.2 131.375
+  Force max component initial, final = 1201.25 34.6358
+  Final line search alpha, max atom move = 9.85905e-06 0.000341476
+  Iterations, force evaluations = 184 1158
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 10.586     | 12.025     | 13.149     |  27.7 | 68.32
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.11966    | 1.2434     | 2.6807     |  86.4 |  7.06
+Output  | 0.0032637  | 0.0042276  | 0.0058015  |   1.2 |  0.02
+Modify  | 4.2872     | 4.2878     | 4.2884     |   0.0 | 24.36
+Other   |            | 0.04055    |            |       |  0.23
+
+Nlocal:    16.375 ave 37 max 2 min
+Histogram: 1 2 1 1 1 0 0 0 0 2
+Nghost:    471.25 ave 512 max 423 min
+Histogram: 2 0 2 0 0 0 0 0 0 4
+Neighs:    1199.25 ave 2492 max 175 min
+Histogram: 1 1 2 0 2 0 0 0 0 2
+
+Total # of neighbors = 9594
+Ave neighs/atom = 73.2366
+Neighbor list builds = 0
+Dangerous builds = 0
+
+###
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Per MPI rank memory allocation (min/avg/max) = 16.41 | 16.92 | 17.48 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     184            0   -22074.602            0   -22074.602    10794.537 
+     291            0   -22121.602            0   -22121.602    2771.4856 
+Loop time of 11.3744 on 8 procs for 107 steps with 131 atoms
+
+98.8% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -22074.6024939     -22121.6021122     -22121.6022186
+  Force two-norm initial, final = 131.375 103.651
+  Force max component initial, final = 34.6358 30.6095
+  Final line search alpha, max atom move = 7.12825e-06 0.000218192
+  Iterations, force evaluations = 107 737
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 6.9369     | 7.7528     | 8.5196     |  19.9 | 68.16
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.074035   | 0.83914    | 1.6568     |  60.5 |  7.38
+Output  | 0.0019623  | 0.0025596  | 0.0035086  |   0.9 |  0.02
+Modify  | 2.7543     | 2.755      | 2.7557     |   0.0 | 24.22
+Other   |            | 0.02485    |            |       |  0.22
+
+Nlocal:    16.375 ave 40 max 0 min
+Histogram: 1 2 1 0 2 0 0 0 1 1
+Nghost:    474.75 ave 518 max 418 min
+Histogram: 1 1 1 1 0 0 0 0 0 4
+Neighs:    1173.88 ave 2642 max 0 min
+Histogram: 1 1 2 0 1 1 0 0 0 2
+
+Total # of neighbors = 9391
+Ave neighs/atom = 71.687
+Neighbor list builds = 0
+Dangerous builds = 0
+
+###
+fix 1 all box/relax aniso 0.0
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Per MPI rank memory allocation (min/avg/max) = 16.41 | 16.92 | 17.48 Mbytes
+Step Temp E_pair E_mol TotEng Press Volume 
+     291            0   -22121.602            0   -22121.602    2771.4856    5545.5955 
+     310            0     -22121.9            0     -22121.9    2234.4583    5546.7624 
+Loop time of 0.700402 on 8 procs for 19 steps with 131 atoms
+
+98.8% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -22121.6022186     -22121.8995113     -22121.8995114
+  Force two-norm initial, final = 477.275 326.764
+  Force max component initial, final = 345.403 186.2
+  Final line search alpha, max atom move = 1.30472e-13 2.42939e-11
+  Iterations, force evaluations = 19 50
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.48017    | 0.5385     | 0.58616    |   5.2 | 76.89
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0058515  | 0.053457   | 0.11191    |  16.6 |  7.63
+Output  | 0.00020579 | 0.00027    | 0.00036707 |   0.0 |  0.04
+Modify  | 0.10373    | 0.10379    | 0.10383    |   0.0 | 14.82
+Other   |            | 0.004384   |            |       |  0.63
+
+Nlocal:    16.375 ave 41 max 0 min
+Histogram: 1 3 0 1 1 0 0 0 1 1
+Nghost:    477.125 ave 524 max 421 min
+Histogram: 1 2 0 1 0 0 0 0 2 2
+Neighs:    1165.62 ave 2705 max 0 min
+Histogram: 1 1 2 0 1 1 0 0 1 1
+
+Total # of neighbors = 9325
+Ave neighs/atom = 71.1832
+Neighbor list builds = 0
+Dangerous builds = 0
+
+unfix 1
+###
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Per MPI rank memory allocation (min/avg/max) = 16.41 | 16.92 | 17.48 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     310            0     -22121.9            0     -22121.9    2234.4583 
+     321            0   -22122.332            0   -22122.332    1608.7336 
+Loop time of 1.18733 on 8 procs for 11 steps with 131 atoms
+
+98.9% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -22121.8995114     -22122.3320917     -22122.3321153
+  Force two-norm initial, final = 93.3885 53.9892
+  Force max component initial, final = 14.9417 16.2648
+  Final line search alpha, max atom move = 0.0016653 0.0270858
+  Iterations, force evaluations = 11 75
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.72718    | 0.80944    | 0.88674    |   6.2 | 68.17
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0093561  | 0.086605   | 0.16896    |  19.1 |  7.29
+Output  | 0.00017683 | 0.00023157 | 0.00031086 |   0.0 |  0.02
+Modify  | 0.28809    | 0.28813    | 0.28819    |   0.0 | 24.27
+Other   |            | 0.002926   |            |       |  0.25
+
+Nlocal:    16.375 ave 41 max 0 min
+Histogram: 1 3 0 1 1 0 0 0 1 1
+Nghost:    477.875 ave 524 max 423 min
+Histogram: 1 2 0 1 0 0 0 0 2 2
+Neighs:    1164.62 ave 2702 max 0 min
+Histogram: 1 1 2 0 1 1 0 0 1 1
+
+Total # of neighbors = 9317
+Ave neighs/atom = 71.1221
+Neighbor list builds = 0
+Dangerous builds = 0
+
+###
+fix 1 all box/relax aniso 0.0
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Per MPI rank memory allocation (min/avg/max) = 16.41 | 16.92 | 17.48 Mbytes
+Step Temp E_pair E_mol TotEng Press Volume 
+     321            0   -22122.332            0   -22122.332    1608.7336    5546.7624 
+     325            0    -22122.35            0    -22122.35      1120.63     5546.944 
+Loop time of 0.196298 on 8 procs for 4 steps with 131 atoms
+
+98.8% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -22122.3321153     -22122.3497974     -22122.3499565
+  Force two-norm initial, final = 302.156 215.847
+  Force max component initial, final = 256.726 174.765
+  Final line search alpha, max atom move = 8.39682e-09 1.46747e-06
+  Iterations, force evaluations = 4 13
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.13428    | 0.1497     | 0.1635     |   2.6 | 76.26
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0017896  | 0.015554   | 0.030991   |   8.2 |  7.92
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0.029578   | 0.029591   | 0.029611   |   0.0 | 15.07
+Other   |            | 0.001454   |            |       |  0.74
+
+Nlocal:    16.375 ave 41 max 0 min
+Histogram: 1 3 0 1 1 0 0 0 1 1
+Nghost:    477.875 ave 524 max 423 min
+Histogram: 1 2 0 1 0 0 0 0 2 2
+Neighs:    1165 ave 2702 max 0 min
+Histogram: 1 1 2 0 1 1 0 0 1 1
+
+Total # of neighbors = 9320
+Ave neighs/atom = 71.145
+Neighbor list builds = 0
+Dangerous builds = 0
+
+unfix 1
+###
+min_style cg
+minimize 1.0e-8 1.0e-8 100000 100000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:190)
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Per MPI rank memory allocation (min/avg/max) = 16.41 | 16.92 | 17.48 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     325            0    -22122.35            0    -22122.35      1120.63 
+     345            0    -22122.88            0    -22122.88    1877.3591 
+Loop time of 2.46468 on 8 procs for 20 steps with 131 atoms
+
+98.9% CPU use with 8 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+        -22122.3499565     -22122.8795835     -22122.8797842
+  Force two-norm initial, final = 56.5131 38.8202
+  Force max component initial, final = 11.4523 16.1895
+  Final line search alpha, max atom move = 4.24441e-05 0.000687148
+  Iterations, force evaluations = 20 159
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.5175     | 1.6979     | 1.8607     |   9.2 | 68.89
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.015165   | 0.17771    | 0.35831    |  28.4 |  7.21
+Output  | 0.00036044 | 0.00046661 | 0.00063003 |   0.0 |  0.02
+Modify  | 0.58308    | 0.58316    | 0.58331    |   0.0 | 23.66
+Other   |            | 0.005411   |            |       |  0.22
+
+Nlocal:    16.375 ave 41 max 0 min
+Histogram: 1 3 0 1 1 0 0 0 1 1
+Nghost:    477.875 ave 524 max 423 min
+Histogram: 1 2 0 1 0 0 0 0 2 2
+Neighs:    1165 ave 2702 max 0 min
+Histogram: 1 1 2 0 1 1 0 0 1 1
+
+Total # of neighbors = 9320
+Ave neighs/atom = 71.145
+Neighbor list builds = 0
+Dangerous builds = 0
+
+undump 1
+#############
+#----------- Thermo ------------
+reset_timestep 0
+thermo  200
+
+thermo_style    custom step temp etotal ke pe press
+velocity all create 300 12345 mom yes rot yes
+fix 1 all npt temp 300 300 25.0 iso 0.0 0.0 250.0
+
+variable vpe equal pe
+variable vtemp equal temp
+variable vstep equal step
+
+fix output all print 2500 "${vstep} ${vtemp} ${vpe}" file temp-tpdh-Pt.dat screen no
+
+dump 1 all custom 2500 thermo-tpdh-Pt.lammpstrj id type x y z
+
+run 1000000
+WARNING: Total cutoff < 2*bond cutoff. May need to use an increased neighbor list skin. (../pair_reaxc.cpp:413)
+Per MPI rank memory allocation (min/avg/max) = 15.2 | 15.69 | 16.37 Mbytes
+Step Temp TotEng KinEng PotEng Press 
+       0          300   -22006.628    116.25159    -22122.88    2835.3866 
+     200    225.08098   -21965.335    87.220074   -22052.555    7240.3124 
+     400    306.76314   -21906.065    118.87235   -22024.937     2631.376 
+     600    346.62041   -21884.605    134.31725   -22018.922   -1512.9864 
+     800    265.03891   -21914.983    102.70399   -22017.687    5174.5776 
+    1000    271.93344   -21896.065    105.37565    -22001.44    5616.8006 
+    1200    337.51977   -21883.188     130.7907   -22013.979    12634.589 
+    1400    278.07844   -21908.948    107.75687   -22016.705    21231.329 
+    1600    291.68693   -21895.828    113.03023   -22008.858   -6787.3116 
+    1800    346.91816   -21872.941    134.43263   -22007.374   -6215.6349 
+    2000    276.16338   -21889.651    107.01478   -21996.666    6232.8152 
+    2200    292.22197   -21894.858    113.23756   -22008.096   -559.37364 
+    2400    274.49004   -21918.633    106.36635   -22024.999     7256.842 
+    2600    327.84374    -21886.09    127.04119   -22013.131    3645.8647 
+    2800      300.511   -21899.741    116.44961   -22016.191    2242.3182 
+    3000     317.3566   -21896.685    122.97737   -22019.662     3757.685 
+    3200    336.04246   -21885.046    130.21824   -22015.264    14385.268 
+    3400    283.67517   -21912.862    109.92564   -22022.787    2747.0894 
+    3600    289.38214   -21904.057    112.13711   -22016.194   -1717.6147 
+    3800    294.75186   -21895.922    114.21791    -22010.14   -25822.976 
+    4000    303.55429   -21897.505     117.6289   -22015.134   -7878.6381 
+    4200    294.17995   -21910.344    113.99629    -22024.34    -10835.61 
+    4400    307.89694   -21892.448     119.3117    -22011.76    -6315.707 
+    4600     304.4925   -21887.973    117.99246   -22005.966   -4122.5871 
+    4800     293.2733   -21914.014    113.64496   -22027.658    18373.349 
+    5000    290.01685   -21900.128    112.38307   -22012.511   -2427.4954 
+    5200    312.72192    -21883.37    121.18141   -22004.552   -2131.5969 
+    5400    281.18028   -21911.047    108.95885   -22020.006    4573.7288 
+    5600    268.73957   -21897.087    104.13801   -22001.225   -15127.469 
+    5800     330.3963   -21888.268    128.03032   -22016.298   -11169.787 
+    6000    301.17243   -21910.421    116.70591   -22027.127   -5970.2223 
+    6200     288.8494   -21910.193    111.93068   -22022.124    910.97698 
+    6400    302.09429    -21894.77    117.06314   -22011.833   -10662.118 
+    6600    270.54228   -21909.947    104.83657   -22014.783   -10299.936 
+    6800     288.3326    -21900.71    111.73041    -22012.44    25964.134 
+    7000    316.29269   -21887.211     122.5651   -22009.777   -15149.425 
+    7200    260.78885   -21909.021    101.05706   -22010.078    2497.2748 
+    7400    328.70693   -21875.749    127.37568   -22003.125   -19267.786 
+    7600    283.93297   -21889.946    110.02553   -21999.972    6612.5547 
+    7800    294.60304   -21900.992    114.16024   -22015.152   -3491.5591 
+    8000    294.63759   -21903.729    114.17363   -22017.903    21145.376 
+    8200    287.64414   -21883.125    111.46363   -21994.588   -16222.906 
+    8400    295.94021   -21882.926     114.6784   -21997.605   -3239.1513 
+    8600    279.40328   -21900.104    108.27025   -22008.375    5391.9212 
+    8800    321.59853   -21879.371    124.62114   -22003.992    20800.016 
+    9000    299.22865   -21897.164    115.95269   -22013.117   -3140.6237 
+    9200    289.20294   -21900.467    112.06767   -22012.534    11238.589 
+    9400    306.17129   -21891.568      118.643   -22010.211    9237.5389 
+    9600     307.5338   -21922.387    119.17098   -22041.558   -917.93178 
+    9800    308.22879   -21906.319    119.44029   -22025.759   -881.50621 
+   10000    295.41744   -21899.723    114.47582   -22014.199    -10354.01 
+   10200    252.59341   -21926.939    97.881287   -22024.821    16566.636 
+   10400    275.77319   -21913.046    106.86358   -22019.909    6815.4757 
+   10600    300.34377   -21906.166     116.3848   -22022.551    7423.5727 
+   10800    299.55699   -21914.273    116.07992   -22030.353   -11947.099 
+   11000    291.99795   -21886.222    113.15076   -21999.373   -6494.0473 
+   11200    315.16485   -21888.975    122.12805   -22011.103    10182.936 
+   11400    283.10007   -21910.952    109.70278   -22020.655   -11616.051 
+   11600    310.02514   -21889.261    120.13639   -22009.397    1806.3077 
+   11800     303.7693   -21901.091    117.71221   -22018.803   -4811.0209 
+   12000    292.22896   -21898.309    113.24027    -22011.55    2024.8921 
+   12200     326.1307   -21876.667    126.37738   -22003.044    8948.8359 
+   12400     262.7639    -21905.93    101.82241   -22007.752   -4911.8066 
+   12600     297.9147   -21905.822    115.44353   -22021.265    8097.6597 
+   12800    342.87679   -21876.933    132.86657   -22009.799    12142.681 
+   13000    327.06836   -21887.035    126.74073   -22013.776    977.83534 
+   13200    311.86421   -21889.886    120.84903   -22010.735    4183.8251 
+   13400    278.21927   -21916.495    107.81144   -22024.306   -833.03992 
+   13600    278.45787   -21910.215     107.9039   -22018.119    2652.5663 
+   13800     277.3689   -21901.204    107.48192   -22008.686    3321.1728 
+   14000    280.99401    -21904.09    108.88667   -22012.976   -22445.819 
+   14200    323.12127   -21888.337    125.21121   -22013.548   -19566.563 
+   14400    278.03895   -21905.424    107.74157   -22013.165    11775.922 
+   14600     288.2284   -21908.102    111.69003   -22019.792    4518.6355 
+   14800    304.98997   -21883.345    118.18523    -22001.53    13756.348 
+   15000    306.82824   -21900.729    118.89757   -22019.627   -4714.1613 
+   15200    278.48576   -21903.005    107.91471   -22010.919   -5310.1416 
+   15400    296.29307   -21902.466    114.81514   -22017.281    23556.349 
+   15600    290.93565   -21886.926    112.73911   -21999.665    3448.8394 
+   15800    269.81061   -21901.246    104.55304   -22005.799    4280.8128 
+   16000    337.20971    -21881.69    130.67055   -22012.361    7886.4471 
+   16200    310.20417   -21899.842    120.20576   -22020.047   -7232.6244 
+   16400    303.05104   -21905.138    117.43389   -22022.572    1450.8996 
+   16600    314.07403   -21896.639    121.70535   -22018.344    32025.568 
+   16800     322.8504   -21877.195    125.10624   -22002.301    339.04753 
+   17000    301.78277    -21905.51    116.94243   -22022.452    4735.7789 
+   17200    319.15893   -21898.004    123.67578    -22021.68    3904.5665 
+   17400    290.72936   -21922.307    112.65917   -22034.966   -11083.089 
+   17600     311.7079   -21901.281    120.78846   -22022.069    5342.3617 
+   17800    318.89035   -21886.228     123.5717   -22009.799     7296.022 
+   18000    305.51185   -21912.984    118.38746   -22031.371     7021.419 
+   18200    305.49326   -21906.306    118.38026   -22024.687    7231.6401 
+   18400     295.1589    -21901.13    114.37564   -22015.505   -9430.5595 
+   18600    314.98499   -21871.133    122.05836   -21993.191    5206.6479 
+   18800    286.46347   -21898.542    111.00612   -22009.548   -4289.7191 
+   19000    320.41797   -21896.554    124.16366   -22020.717    5382.2382 
+   19200    327.16184   -21887.642    126.77695   -22014.419   -714.82329 
+   19400    306.00608   -21887.772    118.57898   -22006.351   -21245.925 
+   19600    283.90752   -21897.705    110.01567   -22007.721    9398.7474 
+   19800    312.96196    -21879.46    121.27442   -22000.735    7715.6

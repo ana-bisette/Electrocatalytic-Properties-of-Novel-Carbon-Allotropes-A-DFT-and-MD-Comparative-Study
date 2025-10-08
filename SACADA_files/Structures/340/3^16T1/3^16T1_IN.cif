@@ -1,0 +1,131 @@
+data_197-TOPOS_I-WPG/Systre
+_audit_creation_date                2015-01-16
+_audit_creation_method              ToposPro
+_chemical_formula_structural        3^16T1
+_chemical_formula_sum               C1
+_citation_special_details
+;
+File: 3D C.out.cgd. 
+;
+_cell_length_a                      16.88304
+_cell_length_b                      16.88304
+_cell_length_c                      16.88304
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   90
+_cell_volume                        4812.291
+_symmetry_space_group_name_H-M      'I -4 3 m'
+_symmetry_Int_Tables_number         217
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+3 x,-y,-z
+4 -x,y,-z
+5 z,x,y
+6 y,z,x
+7 -z,-x,y
+8 -y,z,-x
+9 z,-x,-y
+10 -y,-z,x
+11 -z,x,-y
+12 y,-z,-x
+13 y,x,z
+14 -y,-x,z
+15 -y,x,-z
+16 y,-x,-z
+17 x,z,y
+18 z,y,x
+19 -x,-z,y
+20 z,-y,-x
+21 -x,z,-y
+22 -z,-y,x
+23 x,-z,-y
+24 -z,y,-x
+25 1/2+x,1/2+y,1/2+z
+26 1/2-x,1/2-y,1/2+z
+27 1/2+x,1/2-y,1/2-z
+28 1/2-x,1/2+y,1/2-z
+29 1/2+z,1/2+x,1/2+y
+30 1/2+y,1/2+z,1/2+x
+31 1/2-z,1/2-x,1/2+y
+32 1/2-y,1/2+z,1/2-x
+33 1/2+z,1/2-x,1/2-y
+34 1/2-y,1/2-z,1/2+x
+35 1/2-z,1/2+x,1/2-y
+36 1/2+y,1/2-z,1/2-x
+37 1/2+y,1/2+x,1/2+z
+38 1/2-y,1/2-x,1/2+z
+39 1/2-y,1/2+x,1/2-z
+40 1/2+y,1/2-x,1/2-z
+41 1/2+x,1/2+z,1/2+y
+42 1/2+z,1/2+y,1/2+x
+43 1/2-x,1/2-z,1/2+y
+44 1/2+z,1/2-y,1/2-x
+45 1/2-x,1/2+z,1/2-y
+46 1/2-z,1/2-y,1/2+x
+47 1/2+x,1/2-z,1/2-y
+48 1/2-z,1/2+y,1/2-x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 48 0.00407 0.07767 0.65039 1.0000
+C2 C 48 0.14832 0.39944 0.44133 1.0000
+C3 C 48 0.14748 0.34021 0.44200 1.0000
+C4 C 48 0.04025 0.26969 0.31157 1.0000
+C5 C 48 0.11179 0.30550 0.34739 1.0000
+C6 C 48 0.16113 0.32289 0.49698 1.0000
+C7 C 48 0.18055 0.26701 0.49445 1.0000
+C8 C 48 0.08508 0.25264 0.34629 1.0000
+C9 C 24 0.02094 0.02094 0.64843 1.0000
+C10 C 48 0.15269 0.24208 0.40369 1.0000
+C11 C 48 0.18551 0.22739 0.45072 1.0000
+C12 C 48 0.05268 0.09458 0.34862 1.0000
+C13 C 48 0.05019 0.15375 0.35034 1.0000
+C14 C 48 0.14526 0.18716 0.38283 1.0000
+C15 C 48 0.09092 0.19549 0.36076 1.0000
+C16 C 48 0.13746 0.29923 0.40041 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C12 1_0_0_0 4_0_0_1 0.9999 V 48
+C1 C9 1_0_0_0 1_0_0_0 0.9998 V 48
+C1 C2 1_0_0_0 46_0_0_0 1.0002 V 48
+C2 C3 1_0_0_0 1_0_0_0 1.0002 V 48
+C2 C2 1_0_0_0 17_0_0_0 1.0002 V 24
+C3 C16 1_0_0_0 1_0_0_0 1.0001 V 48
+C3 C6 1_0_0_0 1_0_0_0 1.0001 V 48
+C4 C7 1_0_0_0 44_-1_0_0 0.9998 V 48
+C4 C4 1_0_0_0 17_0_0_0 0.9999 V 24
+C4 C8 1_0_0_0 1_0_0_0 0.9997 V 48
+C5 C16 1_0_0_0 1_0_0_0 1.0002 V 48
+C5 C8 1_0_0_0 1_0_0_0 1.0001 V 48
+C5 C5 1_0_0_0 17_0_0_0 1.0002 V 24
+C6 C13 1_0_0_0 46_0_0_0 1.0000 V 48
+C6 C7 1_0_0_0 1_0_0_0 0.9997 V 48
+C7 C11 1_0_0_0 1_0_0_0 0.9998 V 48
+C8 C15 1_0_0_0 1_0_0_0 1.0002 V 48
+C9 C9 1_0_0_0 2_0_0_0 0.9999 V 12
+C10 C16 1_0_0_0 1_0_0_0 1.0001 V 48
+C10 C11 1_0_0_0 1_0_0_0 0.9995 V 48
+C10 C14 1_0_0_0 1_0_0_0 0.9997 V 48
+C11 C11 1_0_0_0 13_0_0_0 0.9999 V 24
+C12 C12 1_0_0_0 13_0_0_0 1.0004 V 24
+C12 C13 1_0_0_0 1_0_0_0 1.0003 V 48
+C13 C15 1_0_0_0 1_0_0_0 1.0002 V 48
+C14 C14 1_0_0_0 13_0_0_0 1.0004 V 24
+C14 C15 1_0_0_0 1_0_0_0 1.0001 V 48
+#End of data_197-TOPOS_I-WPG/Systre
+

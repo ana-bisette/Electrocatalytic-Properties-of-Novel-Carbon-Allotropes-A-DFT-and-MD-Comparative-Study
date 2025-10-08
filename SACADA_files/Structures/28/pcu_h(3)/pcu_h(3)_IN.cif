@@ -1,0 +1,83 @@
+data_80-TOPOS_pcu-h(3)
+_audit_creation_date                2017-03-03
+_audit_creation_method              ToposPro
+_chemical_formula_structural        pcu-h(3)
+_chemical_formula_sum               C1
+_citation_special_details
+;
+File: HS.out.cgd. 
+;
+_cell_length_a                      9.9313
+_cell_length_b                      9.9313
+_cell_length_c                      10.5868
+_cell_angle_alpha                   90
+_cell_angle_beta                    90
+_cell_angle_gamma                   120
+_cell_volume                        904.2896
+_cell_formula_units_Z               54
+_symmetry_space_group_name_H-M      'R -3 m'
+_symmetry_Int_Tables_number         166
+_refine_ls_R_factor_all             0
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -y,x-y,z
+3 -x+y,-x,z
+4 x-y,-y,-z
+5 -x,-x+y,-z
+6 y,x,-z
+7 -x,-y,-z
+8 y,-x+y,-z
+9 x-y,x,-z
+10 -x+y,y,z
+11 x,x-y,z
+12 -y,-x,z
+13 2/3+x,1/3+y,1/3+z
+14 1/3+x,2/3+y,2/3+z
+15 2/3-y,1/3+x-y,1/3+z
+16 1/3-y,2/3+x-y,2/3+z
+17 2/3-x+y,1/3-x,1/3+z
+18 1/3-x+y,2/3-x,2/3+z
+19 2/3+x-y,1/3-y,1/3-z
+20 1/3+x-y,2/3-y,2/3-z
+21 2/3-x,1/3-x+y,1/3-z
+22 1/3-x,2/3-x+y,2/3-z
+23 2/3+y,1/3+x,1/3-z
+24 1/3+y,2/3+x,2/3-z
+25 2/3-x,1/3-y,1/3-z
+26 1/3-x,2/3-y,2/3-z
+27 2/3+y,1/3-x+y,1/3-z
+28 1/3+y,2/3-x+y,2/3-z
+29 2/3+x-y,1/3+x,1/3-z
+30 1/3+x-y,2/3+x,2/3-z
+31 2/3-x+y,1/3+y,1/3+z
+32 1/3-x+y,2/3+y,2/3+z
+33 2/3+x,1/3+x-y,1/3+z
+34 1/3+x,2/3+x-y,2/3+z
+35 2/3-y,1/3-x,1/3+z
+36 1/3-y,2/3-x,2/3+z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+C1 C 18 0.10774 0.05387 0.01775 1.0000
+C2 C 18 0.19791 0.09895 0.07738 1.0000
+C3 C 18 0.28816 0.14408 0.13694 1.0000
+loop_
+_topos_bond_atom_site_label_1
+_topos_bond_atom_site_label_2
+_topos_bond_site_symmetry_1
+_topos_bond_site_symmetry_2
+_topos_bond_distance
+_topos_bond_type
+_topos_bond_multiplicity
+C1 C1 1_0_0_0 6_0_0_0 1.0000 V 18
+C1 C2 1_0_0_0 1_0_0_0 1.0000 V 18
+C2 C3 1_0_0_0 1_0_0_0 1.0001 V 18
+C3 C3 1_0_0_0 21_0_0_0 1.0001 V 9
+#End of data_80-TOPOS_pcu-h(3)
