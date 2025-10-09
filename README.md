@@ -235,6 +235,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
+* This README template was inspired by the [Best-README-Template](https://github.com/othneildrew/Best-README-Template) created by Othneil Drew. Thanks for the awesome work!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
