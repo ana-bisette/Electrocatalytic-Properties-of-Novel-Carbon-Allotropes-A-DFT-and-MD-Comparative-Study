@@ -34,7 +34,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Estudo e Desenvolvimento de Catalisadores </h3>
+  <h1 align="center">Estudo e Desenvolvimento de Catalisadores </h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
