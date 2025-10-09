@@ -34,7 +34,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h1 align="center">Estudo e Desenvolvimento de Catalisadores </h3>
+  <h1 align="center">Electrocatalytic Properties of Novel Carbon Allotropes: A Density Functional Theory and Molecular Dynamics Comparative Study</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
