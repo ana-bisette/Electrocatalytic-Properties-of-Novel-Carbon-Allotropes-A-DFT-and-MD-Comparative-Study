@@ -1,5 +1,5 @@
 # Electrocatalytic Properties of Novel Carbon Allotropes  
-### Scientific Initiation Project – UFABC (2023–2025)
+### Undergraduate Research Project – UFABC (2023–2025)
 
 ## Overview
 
