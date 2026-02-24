@@ -21,15 +21,16 @@ The research focused on investigating the electrocatalytic properties of novel c
 ## Repository Structure
 
 - `DFT/` – Data related to Density Functional Theory simulations.
-    - Includes Quantum ESPRESSO (QE) input files, output logs, and Pseudopotentials used.
-    - Energy extraction scripts and final converged structures.
+    - Includes Quantum ESPRESSO (QE) input files, output logs, and Pseudopotentials.
+    - **Note:** Contains auxiliary scripts and experimental workflows used for energy extraction and convergence tests.
 - `MD/` – Data related to Molecular Dynamics simulations.
-    - Contains LAMMPS input scripts, data files (structures), and trajectory outputs.
-    - Comparative data using two different ReaxFF potentials (CHO and CHOFe).
-- `SACADA_files/` – Files processed through the **SACADA** (Symmetry-Adapted Carbon Allotrope Database Analyzer) framework.
-    - Used for identifying symmetry-unique adsorption sites and structural classification.
+    - Contains LAMMPS input scripts, data files (structures), and trajectory outputs (ReaxFF CHO/CHOFe).
+    - **Note:** Includes various experimental scripts for thermalization and reactive run adjustments.
+- `SACADA_files/` – Files processed through the **SACADA** framework.
+    - Structural classification and symmetry-unique site identification.
+    - **Note:** Includes auxiliary scripts for data parsing and site mapping.
 - `Graphs/` – Visual representations of the results.
-    - Scaling relation plots, volcano plots, and energy profiles mentioned in the final report.
+    - Scaling relation plots, volcano plots, and energy profiles.
 
 ---
 
@@ -43,9 +44,19 @@ The research focused on investigating the electrocatalytic properties of novel c
 
 ---
 
+## Conceptual Representation
+
+<img width="960" height="540" alt="Diagram" src="https://github.com/user-attachments/assets/271a65fb-2b35-42d0-8f94-1b6b42af7cc1" />
+
+Simplified representation of the electrochemical system investigated in this study.
+
+
+
+---
+
 ## Key Results (Summary)
 
-The project successfully mapped the catalytic activity of 2D carbon allotropes, identifying that while MD provides a fast qualitative overview, DFT remains essential for precise electronic descriptions of active sites. The developed scripts allowed for the automated treatment of over 20+ non-equivalent sites per structure.
+The project successfully mapped the catalytic activity of 2D carbon allotropes, identifying that while MD provides a fast qualitative overview, DFT remains essential for precise electronic descriptions. The developed scripts allowed for the automated treatment of over 20+ non-equivalent sites per structure.
 
 ---
 
@@ -55,4 +66,4 @@ The project successfully mapped the catalytic activity of 2D carbon allotropes, 
 - **Advisors:** Dra. Lanna Emilli Barbosa Lucchetti & Prof. Dr. Pedro Alves da Silva Autreto
 - **Institution:** Federal University of ABC (UFABC)
 - **Group:** GEEDAI (Interdisciplinary Group of Electronic Structure and Atomistic Dynamics)
-- **Funding:** UFABC, CNPq
+- **Funding:** CNPq
