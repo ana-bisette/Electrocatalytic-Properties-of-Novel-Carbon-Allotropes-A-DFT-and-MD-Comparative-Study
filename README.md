@@ -47,12 +47,9 @@ The research focused on investigating the electrocatalytic properties of novel c
 ## Conceptual Representation
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/271a65fb-2b35-42d0-8f94-1b6b42af7cc1" alt="Diagram" width="700">
+  <img src="https://github.com/user-attachments/assets/271a65fb-2b35-42d0-8f94-1b6b42af7cc1" alt="Diagram" width="750">
   <p><em>Simplified representation of the electrochemical system investigated in this study.</em></p>
 </div>
-
-Simplified representation of the electrochemical system investigated in this study.
-
 
 
 ---
