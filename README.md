@@ -3,9 +3,9 @@
 
 ## Overview
 
-This repository contains scripts and data processing workflows developed during a Scientific Initiation project at the Federal University of ABC (UFABC).
+This repository contains scripts and data processing workflows developed during a Undergraduate Research project at the Federal University of ABC (UFABC).
 
-The research focused on investigating the electrocatalytic properties of novel carbon allotropes (specifically **Penta-graphene** and **Biphenylene**) through computational modeling. The study performed a systematic investigation comparing the accuracy of **Reactive Force Field Molecular Dynamics (ReaxFF-MD)** and **Density Functional Theory (DFT)** in describing catalytic processes for clean energy applications.
+The research focused on investigating the electrocatalytic properties of novel carbon allotropes through computational modeling. The study performed a systematic investigation comparing the accuracy of **Reactive Force Field Molecular Dynamics (ReaxFF-MD)** and **Density Functional Theory (DFT)** in describing catalytic processes for clean energy applications.
 
 ---
 
