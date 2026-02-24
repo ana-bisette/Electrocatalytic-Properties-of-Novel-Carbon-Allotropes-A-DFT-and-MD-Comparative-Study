@@ -5,53 +5,54 @@
 
 This repository contains scripts and data processing workflows developed during a Scientific Initiation project at the Federal University of ABC (UFABC).
 
-The research focused on investigating the electrocatalytic properties of novel carbon allotropes through computational modeling and simulation. The study involved density functional theory (DFT) analyses and molecular dynamics simulations to evaluate structural and electronic behavior.
+The research focused on investigating the electrocatalytic properties of novel carbon allotropes (specifically **Penta-graphene** and **Biphenylene**) through computational modeling. The study performed a systematic investigation comparing the accuracy of **Reactive Force Field Molecular Dynamics (ReaxFF-MD)** and **Density Functional Theory (DFT)** in describing catalytic processes for clean energy applications.
 
 ---
 
 ## Project Scope
 
-The project involved:
-
-- Processing and organizing large volumes of simulation and experimental data
-- Automating repetitive computational workflows
-- Performing data analysis and visualization
-- Supporting modeling and simulation of atomic systems
-
----
-
-## Main Activities
-
-- Development of automation scripts using **Python** and **Bash**
-- Data treatment and analysis using **Pandas**, **Matplotlib**, **Excel**, and **Gnuplot**
-- Processing and organization of simulation outputs from **LAMMPS**
-- Atomic structure visualization using **VMD**
-- Generation of plots and structured datasets for technical reports and academic presentations
-
----
-
-## Technologies Used
-
-- Python  
-- Bash  
-- LAMMPS  
-- VMD  
-- Pandas  
-- Matplotlib  
-- Excel  
-- Gnuplot  
+- **Comparative Analysis:** Evaluating the viability and accuracy of Molecular Dynamics (MD) with reactive fields versus DFT (Gold Standard) for carbon-based catalysts.
+- **Electrochemical Reactions:** Study of Hydrogen Evolution/Oxidation (HER/HOR) and Oxygen Evolution/Reduction (OER/ORR) mechanisms.
+- **Surface Interaction:** Analysis of adsorption energies ($\Delta G_{ads}$) for intermediates like H*, O*, OH*, and OOH*.
+- **Automation:** Development of workflows for high-throughput identification of non-equivalent catalytic sites.
 
 ---
 
 ## Repository Structure
 
-- `scripts/` – Automation and data processing scripts  
-- `data/` – Processed datasets (raw data may be partially omitted)  
-- `figures/` – Generated visualizations  
-- `docs/` – Supporting documentation and materials  
+- `DFT/` – Data related to Density Functional Theory simulations.
+    - Includes Quantum ESPRESSO (QE) input files, output logs, and Pseudopotentials used.
+    - Energy extraction scripts and final converged structures.
+- `MD/` – Data related to Molecular Dynamics simulations.
+    - Contains LAMMPS input scripts, data files (structures), and trajectory outputs.
+    - Comparative data using two different ReaxFF potentials (CHO and CHOFe).
+- `SACADA_files/` – Files processed through the **SACADA** (Symmetry-Adapted Carbon Allotrope Database Analyzer) framework.
+    - Used for identifying symmetry-unique adsorption sites and structural classification.
+- `Graphs/` – Visual representations of the results.
+    - Scaling relation plots, volcano plots, and energy profiles mentioned in the final report.
 
 ---
 
-## Notes
+## Technologies & Tools
 
-This repository is intended to document the computational workflows and data analysis methodologies developed during the project.
+- **Computational Engines:** Quantum ESPRESSO (DFT), LAMMPS (MD).
+- **Potentials:** ReaxFF (CHO & CHOFe).
+- **Languages:** Python, Bash.
+- **Analysis:** Pandas, Matplotlib, Gnuplot.
+- **Visualization:** VMD (Visual Molecular Dynamics).
+
+---
+
+## Key Results (Summary)
+
+The project successfully mapped the catalytic activity of 2D carbon allotropes, identifying that while MD provides a fast qualitative overview, DFT remains essential for precise electronic descriptions of active sites. The developed scripts allowed for the automated treatment of over 20+ non-equivalent sites per structure.
+
+---
+
+## Academic Context
+
+- **Student:** Ana Júlia Bisette Furquim
+- **Advisors:** Dra. Lanna Emilli Barbosa Lucchetti & Prof. Dr. Pedro Alves da Silva Autreto
+- **Institution:** Federal University of ABC (UFABC)
+- **Group:** GEEDAI (Interdisciplinary Group of Electronic Structure and Atomistic Dynamics)
+- **Funding:** UFABC, CNPq
