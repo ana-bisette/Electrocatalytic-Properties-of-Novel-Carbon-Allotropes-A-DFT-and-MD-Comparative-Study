@@ -5,7 +5,7 @@
 
 This repository contains scripts and data processing workflows developed during a Undergraduate Research project at the Federal University of ABC (UFABC).
 
-The research focused on investigating the electrocatalytic properties of novel carbon allotropes through computational modeling. The study systematically compared the accuracy of **Reactive Force Field Molecular Dynamics (ReaxFF-MD)** and **Density Functional Theory (DFT)** in describing catalytic processes for clean energy applications.
+This research focused on investigating the electrocatalytic properties of novel carbon allotropes through computational modeling. The study systematically compared the accuracy of **Reactive Force Field Molecular Dynamics (ReaxFF-MD)** and **Density Functional Theory (DFT)** in describing catalytic processes for clean energy applications.
 
 ---
 
