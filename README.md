@@ -6,6 +6,7 @@
 This repository contains computational workflows, simulation scripts, and data analysis tools developed during an Undergraduate Research project at the Federal University of ABC (UFABC).
 
 This research investigated the electrocatalytic properties of novel carbon-based materials through computational modeling. The study focused on evaluating the capabilities and limitations of **Reactive Force Field Molecular Dynamics (ReaxFF-MD)** by comparing its predictions with **Density Functional Theory (DFT)** reference calculations for the description of catalytic processes relevant to clean energy applications.
+
 ---
 
 ## Project Scope
